@@ -1,0 +1,1703 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Check-in Digital — Medición de la Herramienta</title>
+<link rel="icon" href="data:image/png;base64,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">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="https://cdn.jsdelivr.net/npm/docx@9.5.1/dist/index.iife.js"></script>
+<style>
+  :root{
+    --navy:#1F3864; --navy-dark:#152648; --gold:#B08D3E; --gold-light:#D4B876;
+    --beige:#EDE9E6; --white:#FFFFFF; --red:#B3261E; --green:#2E7D46;
+    --yellow:#C9A227; --grey:#6B7280; --border:#D9D3CC;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--beige);font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#2A2A2A;padding-bottom:60px;}
+  header.top{background:var(--navy);color:#fff;padding:20px 20px 18px;border-bottom:4px solid var(--gold);display:flex;align-items:center;gap:16px;}
+  header.top img.logo{height:52px;width:52px;object-fit:contain;flex-shrink:0;}
+  header.top .eyebrow{font-size:.7rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--gold-light);margin:0 0 5px;}
+  header.top h1{font-size:1.28rem;margin:0 0 6px;font-weight:700;line-height:1.2;}
+  header.top p{margin:0;font-size:.82rem;line-height:1.4;color:rgba(255,255,255,.78);max-width:560px;}
+  .tabs{display:flex;background:var(--navy-dark);}
+  .tabs button{flex:1;padding:12px 6px;background:none;border:none;color:rgba(255,255,255,.7);font-size:.88rem;font-weight:600;cursor:pointer;border-bottom:3px solid transparent;}
+  .tabs button.active{color:#fff;border-bottom-color:var(--gold);}
+  .wrap{max-width:780px;margin:0 auto;padding:18px;}
+  .view{display:none;} .view.active{display:block;}
+  .card{background:#fff;border:1px solid var(--border);border-radius:4px;margin-bottom:16px;overflow:hidden;}
+  .card-head{background:var(--beige);padding:12px 16px;border-bottom:2px solid var(--gold);display:flex;justify-content:space-between;align-items:center;gap:10px;}
+  .card-head h2{font-size:1rem;margin:0;color:var(--navy);font-weight:700;}
+  .card-head .score{font-size:.85rem;font-weight:700;color:var(--navy);min-width:48px;text-align:right;}
+  .card-body{padding:14px 16px;}
+  .meta-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+  @media(max-width:520px){.meta-grid{grid-template-columns:1fr;}}
+  label.field-label{display:block;font-size:.78rem;color:var(--grey);margin-bottom:4px;text-transform:uppercase;letter-spacing:.03em;}
+  select,input[type=text],input[type=date],textarea{width:100%;padding:8px 10px;border:1px solid var(--border);border-radius:3px;font-family:inherit;font-size:.95rem;background:#fff;}
+  textarea{resize:vertical;min-height:54px;}
+  .inline{display:flex;gap:6px;} .inline select{flex:1;}
+  .mini-btn{font-size:.78rem;padding:6px 10px;border-radius:3px;border:1px solid var(--navy);background:#fff;color:var(--navy);cursor:pointer;white-space:nowrap;}
+  .mini-btn.danger{color:var(--red);border-color:var(--red);}
+  .item{padding:12px 0;border-top:1px solid var(--border);}
+  .item:first-child{border-top:none;padding-top:0;}
+  .item p.q{margin:0 0 8px;font-size:.92rem;line-height:1.35;}
+  .item p.q b{color:var(--navy);}
+  .options{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;}
+  .opt{flex:1 1 auto;min-width:72px;text-align:center;padding:7px 4px;border:1px solid var(--border);border-radius:3px;cursor:pointer;font-size:.78rem;color:var(--grey);user-select:none;}
+  .opt input{display:none;}
+  .opt.cumple.sel{background:var(--green);border-color:var(--green);color:#fff;}
+  .opt.parcial.sel{background:var(--gold);border-color:var(--gold);color:#fff;}
+  .opt.nocumple.sel{background:var(--red);border-color:var(--red);color:#fff;}
+  .opt.na.sel{background:var(--grey);border-color:var(--grey);color:#fff;}
+  .item textarea{font-size:.85rem;min-height:40px;}
+  .summary{background:var(--navy);color:#fff;border-radius:4px;padding:16px;margin-bottom:18px;}
+  .summary h2{font-size:1.05rem;margin:0 0 10px;}
+  .summary-row{display:flex;justify-content:space-between;padding:5px 0;font-size:.88rem;border-bottom:1px solid rgba(255,255,255,.15);}
+  .summary-row .val{font-weight:700;color:var(--gold-light);}
+  .overall{text-align:center;margin-top:10px;padding-top:10px;border-top:1px solid rgba(255,255,255,.25);}
+  .overall .big{font-size:2rem;font-weight:700;color:var(--gold-light);}
+  .badge{display:inline-block;font-size:.72rem;padding:2px 10px;border-radius:10px;color:#fff;background:var(--grey);}
+  .badge.green{background:var(--green);} .badge.yellow{background:var(--yellow);} .badge.red{background:var(--red);}
+  button.primary{width:100%;padding:14px;background:var(--gold);color:#fff;border:none;border-radius:4px;font-size:1rem;font-weight:700;cursor:pointer;margin-top:6px;}
+  button.primary:active{background:var(--navy);}
+  button.secondary{width:100%;padding:11px;background:transparent;color:var(--navy);border:1px solid var(--navy);border-radius:4px;font-size:.9rem;cursor:pointer;margin-top:8px;}
+  .status-msg{text-align:center;font-size:.85rem;margin-top:10px;padding:8px;border-radius:3px;display:none;}
+  .status-msg.show{display:block;}
+  .status-msg.ok{background:#E4F3E8;color:var(--green);}
+  .status-msg.err{background:#FBE8E7;color:var(--red);}
+  .status-msg.local{background:#FDF3E0;color:#8A6A1F;}
+  .hint{font-size:.78rem;color:var(--grey);margin:8px 0 0;line-height:1.4;}
+  .entry-row{background:#fff;border:1px solid var(--border);border-radius:4px;padding:10px 12px;margin-bottom:8px;font-size:.84rem;}
+  .entry-row .top{display:flex;justify-content:space-between;align-items:center;gap:8px;}
+  .entry-row .actions{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px;}
+  .pill{background:var(--beige);color:var(--navy);padding:2px 8px;border-radius:10px;font-size:.72rem;font-weight:700;white-space:nowrap;}
+  .hotel-block{background:#fff;border:1px solid var(--border);border-radius:4px;margin-bottom:14px;overflow:hidden;}
+  .hotel-head{background:var(--navy);color:#fff;padding:12px 14px;display:flex;justify-content:space-between;align-items:center;gap:10px;}
+  .hotel-head .name{font-weight:700;font-size:.95rem;}
+  .hotel-head .sub{font-size:.74rem;color:rgba(255,255,255,.7);}
+  .hotel-head .pct{font-size:1.5rem;font-weight:700;color:var(--gold-light);text-align:right;}
+  .rtable{width:100%;border-collapse:collapse;font-size:.82rem;}
+  .rtable th{background:var(--beige);color:var(--navy);text-align:left;padding:7px 10px;font-size:.72rem;text-transform:uppercase;letter-spacing:.03em;}
+  .rtable td{padding:7px 10px;border-top:1px solid var(--border);}
+  .rtable td.num,.rtable th.num{text-align:right;}
+  .tscroll{overflow-x:auto;}
+  @media(max-width:520px){.rtable th,.rtable td{padding:6px 5px;font-size:.74rem;}.tabs button{font-size:.78rem;}}
+  .pending-hotel{font-size:.82rem;color:var(--grey);padding:10px 14px;background:#fff;border:1px dashed var(--border);border-radius:4px;margin-bottom:8px;}
+  .corp{background:var(--navy);color:#fff;border-radius:4px;padding:16px;margin-bottom:16px;display:flex;justify-content:space-between;align-items:center;gap:12px;}
+  .corp .big{font-size:2rem;font-weight:700;color:var(--gold-light);}
+  .rest-list li{display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid var(--border);font-size:.88rem;}
+  .rest-list{list-style:none;margin:0;padding:0;}
+  .photo-pick{display:flex;gap:8px;}
+  .photo-pick label{flex:1;text-align:center;padding:11px 6px;border:1px dashed var(--navy);border-radius:4px;color:var(--navy);font-size:.88rem;cursor:pointer;background:#fff;}
+  .photo-pick input{display:none;}
+  .photo-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:12px;}
+  .photo-card{border:1px solid var(--border);border-radius:4px;overflow:hidden;background:var(--beige);position:relative;}
+  .photo-card img{width:100%;height:130px;object-fit:cover;display:block;cursor:zoom-in;}
+  .photo-card input{border:none;border-top:1px solid var(--border);border-radius:0;font-size:.78rem;padding:6px 8px;}
+  .photo-card .rm{position:absolute;top:5px;right:5px;width:26px;height:26px;border-radius:50%;border:none;background:rgba(0,0,0,.6);color:#fff;cursor:pointer;font-size:.8rem;}
+  .thumbs{display:flex;gap:6px;margin-top:8px;flex-wrap:wrap;}
+  .thumbs img{width:54px;height:54px;object-fit:cover;border-radius:3px;border:1px solid var(--border);cursor:zoom-in;}
+  .quick-btns{display:flex;gap:6px;margin-top:10px;flex-wrap:wrap;}
+  .quick-btns button{flex:1;padding:7px 4px;font-size:.78rem;border:1px solid var(--border);background:#fff;color:var(--navy);border-radius:14px;cursor:pointer;}
+  .quick-btns button.active{background:var(--navy);color:#fff;border-color:var(--navy);}
+  .filter-desc{font-size:.8rem;color:var(--navy);background:var(--beige);border-radius:3px;padding:8px 10px;margin:10px 0 0;}
+  .export-row{display:flex;gap:8px;} .export-row button{flex:1;}
+  .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.88);display:none;align-items:center;justify-content:center;z-index:50;}
+  .lightbox.open{display:flex;} .lightbox img{max-width:94vw;max-height:88vh;}
+  .lightbox button{position:absolute;top:14px;right:14px;background:#fff;border:none;border-radius:50%;width:34px;height:34px;font-size:1rem;cursor:pointer;}
+  footer.note{text-align:center;font-size:.72rem;color:var(--grey);padding:20px;}
+  /* ---- Check-in Digital: indicadores ---- */
+  .kpi{padding:14px 0;border-top:1px solid var(--border);}
+  .kpi:first-child{border-top:none;padding-top:0;}
+  .kpi .kt{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;}
+  .kpi .kt b{color:var(--navy);font-size:.93rem;}
+  .kpi .code{display:inline-block;font-size:.7rem;font-weight:700;color:var(--gold);letter-spacing:.04em;margin-right:4px;}
+  .kpi .kd{font-size:.8rem;color:var(--grey);margin:3px 0 8px;line-height:1.35;}
+  .kin{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px;}
+  @media(max-width:520px){.kin{grid-template-columns:1fr;}}
+  .kin label{font-size:.74rem;color:var(--grey);display:block;margin-bottom:3px;line-height:1.25;}
+  input[type=number],input[type=month]{width:100%;padding:8px 10px;border:1px solid var(--border);border-radius:3px;font-family:inherit;font-size:.95rem;background:#FFFDF4;}
+  input[type=month]{background:#fff;}
+  .kres{display:flex;align-items:center;justify-content:space-between;gap:8px;background:var(--beige);border-radius:3px;padding:8px 10px;margin-bottom:8px;}
+  .kres .kv{font-size:1.15rem;font-weight:700;color:var(--navy);}
+  .kres .km{font-size:.72rem;color:var(--grey);}
+  .st{display:inline-block;font-size:.72rem;font-weight:700;padding:3px 10px;border-radius:10px;color:#fff;background:var(--grey);white-space:nowrap;}
+  .st.cumple{background:var(--green);} .st.parcial{background:var(--yellow);} .st.nocumple{background:var(--red);}
+  .warn{font-size:.75rem;color:var(--red);margin:-4px 0 8px;display:none;} .warn.show{display:block;}
+  .uses{font-size:.72rem;color:var(--gold);margin:-4px 0 8px;}
+  .kpitable td.c{text-align:center;}
+  .cell-cumple{background:#E4F3E8;} .cell-parcial{background:#FBF1D6;} .cell-nocumple{background:#FBE8E7;}
+  .rm-item{background:#fff;border:1px solid var(--border);border-radius:4px;padding:10px 12px;margin-bottom:8px;}
+  .rm-item .rm-top{display:flex;justify-content:space-between;gap:8px;align-items:flex-start;}
+  .rm-item .rm-top b{color:var(--navy);font-size:.9rem;}
+  .rm-item p{font-size:.8rem;color:var(--grey);margin:4px 0 8px;line-height:1.35;}
+  .rm-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:8px;}
+  @media(max-width:520px){.rm-grid{grid-template-columns:1fr;}}
+  .rm-grid label{font-size:.7rem;color:var(--grey);display:block;margin-bottom:2px;text-transform:uppercase;}
+  .rm-tag{font-size:.68rem;color:var(--gold);font-weight:700;white-space:nowrap;}
+  .progress{height:10px;background:rgba(255,255,255,.2);border-radius:5px;overflow:hidden;margin-top:8px;}
+  .progress div{height:100%;background:var(--gold-light);}
+  .devtag{display:inline-block;font-size:.66rem;font-weight:700;color:#8A6A1F;background:#FDF3E0;border-radius:8px;padding:1px 7px;margin-left:4px;vertical-align:middle;}
+  .tipo-pill{font-size:.68rem;font-weight:700;padding:1px 7px;border-radius:8px;background:var(--navy);color:#fff;margin-right:4px;}
+  .tipo-pill.med{background:var(--gold);}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <img class="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABzCAYAAAAR4LWGAAAZzUlEQVR4nO2c2Y8kyV3Hv7/IzLrPvufqnT3Gu/YaH2vv2gYshGRkg1kkhJFfAC08AJbgwULCr/4beOAP4MXPRoCRhWQhDsNiG8My8qx359jdmen7qKruOjPjx0NmZERelVVdPbOzsxNS96+/WVmRmRG/+MQ3o7KaNj/3RwAYkcIAKEU/yKhKnp6pnMcFLHQCucUGZ1TK5p8M4uAEmDL19BhcVkLHLjtPzxxZa1WR2p6lGSBSGqk6PTJAND3qCgFm2LNcCTEFmqbqSARAiGvo7RGdF9l4l6lnjBS9IKJoRoc6OADFTiCuk5Fmi0aFIszshSInIzJ0SvRzU/8kNSLbzXedPSJDp0TO0EbkqTo482ADhxkfL3MjkhaKakQACDRS9QMbEWCjvrg2EjeuZxwhFNuRiGD7ScnGaceYjnNieF7EjDotRpg9helnOgEYrI5rI8YYnjxTVXxtR5mN94nh8ThnBs/J8PnjgimfwMrMjOekhrl9OjWjzM5mepLhizD9/WC42s65cSZXg9iImInZUxmezvQHNiJSo6pPj4jFGZ5TgRE145/49OmTyJw+PVmRKqmMn5KxD5TxC2bwI+jT0yvS5zQn41OYnsL4dOYnma41ItvPxvRHgfGcq8/I+LPFD6NPn6YTjH/i0+M6hdkzMjyvRBj/xKfH9dkZbhaObWFAMZ51J83A8Cc+Pd+nM2sN5mCb1naUyZid2VMZns70BzYi8pj+Pvj09Ar1+8+P8ViA4anxg+3T88pDYvyCGfwB9Ol5Jcb4FKanMD6d+Umma43I9rMx/VFgPOfqbOYrxrPp46cz/YlPj74wi09PP4Cu12B8DsPzIhZgfITZU5h+phOAweq4fnAMzyua8ViE4fE4ZwY/hj59umY/49P8BCW0PmhUz+BKInrWmFXP+Sa0r2eoIKfCMFXi2mgjs6Qy/olPn5XZWQyPj5BkmZ3xWIDhqfHx9un5DX8ujF8wgx9Dn24WjW6ttY9Hdnzi0+f36eYPGAk9k49/4tNnHTGxC59SbDUDP/HpZqstzvC8YkczcdY4ZwZ/CH16hOnMINI23V8yCHfUB33i05MVhqkyo0+P7xHOF8H2iKsJ2v2JTz8Hnz69sMF4LMDw1Pjh9ul5ZUbGL5jBH0KfHllymY3xWZPHokx/FBgfNMAUnT1ijD5JGRAJpoc6YPtsjEeqfmhMj2gjceN6bsbTTPo8fHq0JFP5fBgfYfYTn55eosfMYPycGTwnw1eXG9zp9Sl6Ku9f46SjdZrO9+kKYVnRVtSZ6koienGGjyYuJq4HyXzODJ9SQW6FQYnrB1RsED10ny4UW4Pfj6NPj6de/IOlJONnjmf36VKqVT08tj5dH4OD31FtRzNSndp8GXwWn04xbb6ejGfN4HhEhp5ezuLT85hvMP7h+nQgJaHjem7GPzo+PVOzyviZGL/giIDJ8BQXNSOi8xlPM+mH4dPzYD0b4yPMXtynBx/CGJm7QMq/bwyPl/gxeWqMMf58GJ4XRYzxC6d8DsMZgGUJlGsFDE7G8DwJIoJTFHjq05d52Bvh/o1dYleiWCtA2ITJ0MNk5AHMZ/LpOm/i2o/CoNCcMWu+Tokc307R7eYISNXaBXFEZ0dhCZRqBf+YzLAKAusfWeHKUpkJDLCE5VhgAmrLFQiLIAGwZFz6xAZXWyX25wbAKdph3sVZnR2Rof0o/MwmRCMy9DzRYHosoVUXmAlNUzWFmiI6GQtFG60LDa4tl/npl6+wU7D87aUCu66H5SstWI6/TViC3ZELz9NzGAOAR+jsnhIBcIoO1p9bYRIEIQhOwYKwyD8mBfNHEDM1kjrIeEY0IqpZq6maTY1UnR7zM5g5Q4cxQIJFuPD8CuqrVZwcnqK2UmWAISzg8L0uujs9OCUHkoHhyYi239yjrevbYE+G2dnZ6kAGurZc5u7eCdhjCFvg6itXuNIqs120dEbHziWhkdQPhPH5LiSL8XmuI5/x3shF73AAu+jg5PA0zM7TwwGpi1fvkC5jdDLGEEwEf7/JYILdO0fkZybDcgS6eydEBFTaZXaHLmorVbQ2Gnzvxg6RxJkYn+LjH856OhA9kSzTkuXTSegdzdddSTjZPcVoMKFJfwTX5WA/DjDAAUQN8AXH8zuGwFIn1t7tIwIAyxaoL1dxejTA6jPLeOtfbxOC/UwfNSvjz+fOFfoEkjrNtFB0e+4Iib7gFGw0NmosJ4zObs+fFdXrzOjsnpCyuRRsF0RYatf5wmoL7XYVrXoFpYIDZkZ/OEbvpI/DTh/bex0cHvVImjdVYEiPsXVjl0qNIthjdkceQMDSpRYXqg46O6cYHPcpLfVUxoety+rOlYGHup4Ozeqz+PQLH13j7k4PpUYJ1UmZe/unMf/o129ZAu1GlT/7iWfwG7/6KayuNPxRA4BEkPUq0yX81VIi7B+d8Pd+8N/4r/+5hcPOCfmTr98Og84Qg+6IWDKK1QJKjSL2bh/RpY+v8zs/GUK6Kgs4EnU/mox/yM+9aMbPz3AAIEtA2BYGnSGK1QJ6B/3IHo5j4+Jai7/+6hfw7OYamvUybNuCMCeWgOG6RVQNjItrDfzB73wRv/3lz+LWu7v8ne/+EFt7xzQaTwD4KCICmACWQLlRZGFZeruRP1lxCuMXY3jejSdH9suvgISAf66ErZ/t0PJmm5mB/XePSGW4EIRmo8pf+ZVP4ku//CKatTKs4H3xDmSWAfNJtXe4nyCBgkNYWaqj3aji2tMb+Kd/u87f+8H/oNM7JQ76a9KfoN8Zodwo4f71LWL25w/LEZATLzgOUiNtvvKH05p0SgzzL6bzS6tR9T+B4hnfR0BztcalZgn7t4/I86SfEERQE5wlBC5ttPkbv/9rePrKCgq2bZxacN6ao0HF8YzQ28wVSAYwcT3cuXuAv/6b7+Pu9iFJyXpfZggiCJtQW6tza6OGd396n9jz682+c2W/+oBGj5xPF4KwfLUNIkK5UWRI6a/pB15bEOGZzTX+9je/hmtX11FwbDWV6J4LO0G1AGJIY/MNCKlEvs0s2Bae3VzBt7/5NTyzucaCKOLLIYALL25wfbkCZqBULwGCMl2Nf+dKMAwWhQxO6Bij03R6jN9hpmynDE0AS8bezQO0LjQgpfQnxqBBbMvCtac3+FvfeBXNetn/dIsRpo2e3LRms50p+IMje+vkV1wBIIRAo17Ct/70VVx7ep0tIbTjAnBw54jckQen6KB1sc7+PYRuIzNOWatBhk6JnKGNyFO14XJStJSM3mGfbv7HO1SoFMP3A0C7VeU/f+3LaDcq/uKbMcuajWJOvmHSGJMtBRui07j/ujlDCBDazSr+7LUvo92shkNEeoxBdwgwcHT3GFs3dsmbyEzGC5iZPjUiQydMS2ovTx8xOtNNbTkWrr50kRurNRaWgDt20dnqkDqHerWEv/yTV7Gx2ow0sioc4TmgustsZPO4mvnqGlk7MKiE8e3oxmoLf/HHX0WtUopc687NfTq82yFw8prNGGX81IgMbWboFKZzbD+ObQ9/dKYTgK239skuWli/tswsg89rWcK2BT73qef4qYvLEP7tUmKKpxD0rBs7pYMi74l0gM5QVZ9qTIuAZ66s4jOfuMqOY/nnLTlc40mbB2Fog/GzsDqP4VlMjzMcWocxvuJHqK9WeWVziS3HhmXbIMVUIqyvtPh3v/p5OI6lG4x1sugMVRdsbIt0uv4bEfOsSrQ7zSnYcSx8/Te/gJV2g7MymwKcRWlAJuMfBsPncDuScbzTo52bByTHLnbf3iMZvG4Jwi995hrazbJuEQXtEER+B+mO1xOdv3+4i78fmS8YzRsbIXo3v+7lVhW/+NlrEEJktk1a201hvMH0c2N41khJRiEAYsAduTjc6tF44IZMrpSKePmTz8IJvDoFbaXcmT431h1itFx4nPAKjd/hieuOC/9Wc5AxITu2jc996jlUSoXMtkmLCcZrjVQ9d+aqOCfjCxUHteUqCwHYDkX2ee7qGl9cbyOKATZ+I7DqBERQovfVe1OQ3/5sGK6nG/UgmFDjc4iauy9vtPHs1Q3W+8cjJ2KC8apXsvS8mXsWxgtLYOOFdV7abOOply5ztVVhc5/Pv/Q8HFt9UzSWKH6LBxcdIENlfxDYjGDEeiVoaIUahJ0TtrQ6LvxEKNg2vvDStbCtkjF6j/Q+MJ5jr3PiddUYli1QWyrDc12cdtSHGAzbFti8tAzLsmC0TKRDAd2xIfFJ/4vN4NrDLFYJEQhVW6Ren1oUqUDddFqWhauXVlBw7IyMT7adsR5vMD2ijYuJ61hEpo6+oEaK1rE3MnDnx3fJdgRICHiuDPcpFQqolAthHeGj/eYz/ozgK7oBRJjCxlMnRuGOxoUhbNNYg/krtKx2YCMGf5RLDooFGxPX9QddUEdWtNk8OAMP4/l0k+tphRmA9OAFK3xmcRzBjiU0KozqGfpv3aB+D5kuXy+A6UZWfe4/wUxGheod0b/jX+YoODYKBYf5dEiqs6dFW50bpsYFU95MKZgYiLWRuQMYTtGGsAVG/Um4CmnbNmzbir5HNX6inwOhtoejAwDpxgxzBWos6J4g6IUu3UnGubOfq45twbZEUJeqRcdo7RR8B2qBhPb1DBWY0ch6tV23FcGygNZ6nUvNKoQNbL+5T5PhxL9QKQHmEFVBHoV/Q+mgodJWX3SyG91HpvOh9GyPcVtdMCMgXTwfVaOzDJXyR8YnUOfB8JwKTMZTpIJIuwgi1Nfq6Gz1UG6VIGwLRC4Af118koIgc9yo81EuJ/IUWLCfymf1zuHERWcwhNlEZvNlFXXU45M+ChUHlVY5WH5nSAbc4QSTkVqPpzAan7katWQyfkqch/FyOuMnE4n9O4dYutxGvzPE+HQU7jsauzR2PdYjxT+m8sdmW/kNDu2ewGFfh0sDwWh7e28f/3D9BiaSw+7JbOWM1zZevoJ1lmGvSSnx3htb2Lu5RwnGA1OQPGMGz8t4EIMo6wr80j8eUr+z458s9P7jsYvDzik2L/mLYwQRXrnO9Fj94ejSjW0mDik7C4BZGkyONj8hePSDzNdJzx8s9fHY/4AmMrIfHONnez494uPNmc1oH3+TRorKQY8Z19+8i49/5DIc2zJOONJC4Pg20+6Q7ii13+VWA7/+sedTzymOJT35+g3heRI3bm7hBz+8Hu0sBk6P+mbLmoyPTgYRPTfjaUatkjCd8ZnDOSg/euMWfutLL6FQL+sLZYBJ/50oJrKBkPeq8dvlCpqlcsob1Zsp9pcuw9EE//j3P8bBO0ekJmm/X/QTHHHGC5V5wTyEqJ7tM9G0tZZpP0D+PtN+9va7dOPWfYSfNwdFSoYnGa6U8ILPZRMdEbwnwv1gB0Gkf4KHVAHfycpgPiG1X/DxoyDCzn4XN35+j5ilTxvmYB6TkDI4ij/Th3ORHc08lRULMjym41nCMEZB6uvTv0c6HE/w+k9v4ZMvbMJ2LL/BwdjqdLHd7WEwGaNeLGJzqY2lSsVvLEHBnEDQNtQ/mp6E/Y2SJTxmeMzY6fZwr9PBYOKiVnBwqdXCWr0GAmAF2Hz9p2+jPxzDZLhqh6jW7RMy/lx9ekqFYdIF9cRdTZwOpheHOU8EJ/Hj67fw8tvPYVICbh8cYrvbw9hzQSRCPjOAasHBpVYTz6+t4oX1NTiWFfFbID+j1R38yHXxxtY23trdx/1OFyPXg37gyz/viuPgQrOOZ5aXsV6u4l9+dANSMvxlBeFPsiRAkKGLibs82nzlNTzs0mpUuNMb5D5XYxcs1FaqPDodkzt2ISyBYrXA5UYJrQsNVJeqsISarDUGw/wKMlzNKUXbxvPra7i61EazXEIpWNTqj8c4Ggxwa/8QN/f34UoZRau6BwhGnlpUEyC40sPpYR9H9zsYHA8xGY7JdSUKjg2nWuD+UZ/GQzdhrm0fOfNncLwHdYnrZNHzxPT9vOCLBM2NBvuZpKylz1kEiCg6NpbKZXz80gaeWl5C0bYxnrh47/gYb9zdwkG/j6HrYjiZ4H/vbeH61jZIaGso4DPcYw4y1++k5WoZv3DxIq4stVB2bIxcF3ePu/i/e1vYPTnBcOKCiFBdqqDarvj1CcEAQMw4PTrFz394B8b41a4m1V2cM+PjxaeHyfiM75EysPXmLqpLVThlxUsBlhKexxh0T9G518PvfeXz+PQLm3CEFTyyB3CxgKVKGS9urKM3GmG728OP372LvZMTuJLhTbyI0bEsAVsQVus1vLR5BRebddSLRVhCBH6cUCsU0C6V8cLaKt7dOcRffef7qF9soNwsQ1gE4QgEXhaTsYe713cANzqDKebPyfjz+R6p6XzMxjaL+kSs3xnSW/9+GytPtdkuOfAmLobdEU4P+xj0RkTM+O7fvc6ba0tYWaqHjsYSApYQcCyBlWoV7UoZ19ZWcHjax/1OF53BCEPXX/8p2Taa5RI2Gg2sVCuwLQsWkT8KpMRIepAyeExPCAyHLv72ez/C3jtHtH3nEKV6gatLVZTqBdgFG+7YxdG7HZwe+89Zpvn4R5rxunD4hIHuMN8jW5aFQs3hj31sE9devIy90xNMPA+OZWGtXsdH11ex1qijUSrCFgKCBAiAhH9LD2h7yIGjcSWjOxhip9fDz3Z2sds9gSslbCHQqpRxfL+D1//z5xj0RuS5HqTU3sMS/g1VuLqu8g+xKfbKK6+dO8PzG37Oh1bNoyv/bAk0N2q8cW0NhWoBliMQfoSjDFEwWsuOg6VqGV989hlcbrWCOSIwe8HlSpZgAFudHv757Vs4ODnFYDJJ3NwpUyddifFwjJ2393F075ikJ8GSg1WD/Os6l4xP9elTdLNR4a6R8XGfzgbC4nHt2RVurNdQbVfglArafDNAJOB6LqSUsCyf98zsP0vBfpY3SyWs1+tYrlVQLxZBALqjIQ5OB9jt9dAZDFXThCj1b8YkiARsS4QOSl2TO3bRPxrgeKeHvZv7NEs+2erCz9enJ1f3OCYSjI/cSRo6Fk/2Tmj9uVV2SjbADM/17Vx3t4fubo/GJ2N4kmFZAqVmidsbDdTW66g0SiAi9IYj9EZj3Dw4iJyY+uAaIDBL9I+H6O11cbzVxbA3JM8FhAUUKgXUV6vcXG+g2i7DLtqwCjYK9SL6P9sK70zziPGIMj564tr1+Blol21cemGDR/0R9m4fked6/q7SX1kMFsT991gEYqBQtrH67Co3LzRgORYsW4T/QtnvQIY7dtHd7mL37QNyRy489lktOTgLBoTwXYkgAlmE5StNLjcr2L6xS8PBJFzpTL9t+gAzHgisaLAarNZG1HYKvl4Jgv/8vORwcvO/wiPglGxYjsWWEAABnufBG0uajCaQLoOlBw4WuEgIkEVQ37uRnh4Z/qQf9J5EZHteifr4c/Lp8RL36f5yiZHRWYyfxnypyEcgQWhu1H1L1yjBKdkgBkaDMQadIXp7Jxh0B+S5DG/swh25IH8ZPuE6hEWwbBvVpTLXlmsoN0twig4g/O/QDk9GODk4RWe7R54r/QY3Lkz59NyGB87fp6d1eIT6IeMR7pzJ+EzmI9QkCLXlKtqXW3BKTnBLz6guVSAvSmx8ZBWDzpD3bh+gfzygyciDdD1z5QS2I2CXbNSWKrx6dRmlWhFkU5gw/hwuUWqUwAA6270wpdJ8ejYxjIafdz09+87WaPwphcioM2jedB80W5Qe4971bdq7fYgLz69x61IzXNYVIMAWqC1VUFmuQE6YPdfDuD+GO/JAgmAXLBQqBVi2gDAaO8gQeJL9h2jvH/ssP52EOA7X2QFzJsqI+qxtM+t0qy3G8LySdueaPCbPFaVkDE9GuP2T96h4YwfNtRq3L7f9/8whKJhICZZDsB0LhZKN1GtlQIIhQPBcRm+/h6P7HfT2TmjUH0N/j0dfS+7ZMcLnrZS2/cSbzvB5fXreejqATJ8+6/8CyIwARv0J9u8c0t47RyiUbNRWa1xfrqJUL8IpOrCLNoQTZGuQzZ4r4Q5dTAYTDHpD9A5OcbrfJ3cS/M8aIt16c85xyeblKauTi/h0xJiOWZidzfConiWy/y17ZowGLsbvHdPRex1QYAWDhU1YtgUpJaQnwzdz4OMhg6jaISRDHsPP4mpyVyORrucsmvGBq4lRMKGZkXRBSuaMCAS38cSQrr9dPSjgjr2U93H4vrMzPMn08NrxSDBeH9tcsU7VHNdGZYbOGgF5zzImIuJaHT2uZ4gGi+difF7JXE+PZWyC8Zi2NnNGxqdGIzMzMlhd93SNhJ6pGB8dKp3w8efi0yM6xm5T8zTmI0OfMSJDh7+jmT6rnp0Q0X1SffyiPj39oEbWxBifF0OmBwePMn6RkWCMiHjE9BEynfH5U6991vWS+Ys+jr9+EmV8XtSnGWe8/4sDq3dmpocjJMbw1BGSZHjcp8d1aI6CaKtnSswkztfTffp0f04AkZFx58nwFKZjPoar7XOVxNuTTAcoEkMfHybUB8KnPziGn5dPT2sxM8ZWJ1Xdc0M85SAGo+MUjDF+IZ/+vjA836dnadU+D5Dx8ZwzNCPp4x8zn56qjWjnPaeO8DQpRUczdtb1dHXL/jj79EhLT2N87MipjZ+uY+zO0+w/kmFZlnro6iGUWRg+K+PPp2Qwft5qYj2ecyEHR116uD49Jarq4/qM0Wy6pNbto/Q5Mn76LJ4XHzefntQc0UL7av2jXEeogcj2UE+NyNBniXqGiWoy8ihPU2T7XD8U10jXc0Rbszhanvj0vDLHCFcZb+iZXE36QQ1Gx11OhutJMD2A7OPo0yMdm+JyFmB8POdy9IfMp+f9L2aRyvRQx9idpyMRGfos0WD6goxPMn8WxiNDI6rniP8PdvLAA5LawckAAAAASUVORK5CYII=" alt="Grupo Martinón">
+  <div>
+    <p class="eyebrow">Grupo Martinón · Dirección Corporativa de Implementación y Procesos</p>
+    <h1>Check-in Digital — Validación y Medición</h1>
+    <p>Validación en campo por área (criterios de la plataforma) y medición mensual de gerentes (12 indicadores). La propiedad promedia sus áreas.</p>
+  </div>
+</header>
+<nav class="tabs">
+  <button data-view="campo" class="active">Campo</button>
+  <button data-view="ficha">Gerentes</button>
+  <button data-view="resultados">Resultados</button>
+  <button data-view="fichas">Historial</button>
+  <button data-view="roadmap">Roadmap</button>
+</nav>
+
+<div class="wrap">
+
+<!-- ======================= VALIDACIÓN EN CAMPO ======================= -->
+<section class="view active" id="view-campo">
+  <div class="card">
+    <div class="card-head"><h2>Datos generales</h2><span class="pill" id="c-edit-flag" style="display:none;">Editando ficha</span></div>
+    <div class="card-body">
+      <div class="meta-grid">
+        <div><label class="field-label">Hotel</label><select id="c-hotel"></select></div>
+        <div><label class="field-label">Área</label><select id="c-area"><option value="">Primero elige hotel…</option></select></div>
+        <div><label class="field-label">Fecha</label><input type="date" id="c-fecha"></div>
+        <div><label class="field-label">Evaluador</label><input type="text" id="c-evaluador" value="Erika Quispe"></div>
+        <div><label class="field-label">Nombre del entrevistado</label><input type="text" id="c-nombre" placeholder="Nombre y apellido"></div>
+        <div>
+          <label class="field-label">Perfil del entrevistado</label>
+          <select id="c-perfil">
+            <option value="">Seleccionar…</option>
+            <option>Agente de Recepción</option>
+            <option>Agente de Club / Concierge</option>
+            <option>Supervisor / Coordinador</option>
+            <option>Gerente / Subgerente de Recepción</option>
+            <option>Bell / Guest Services</option>
+            <option>Otros</option>
+          </select>
+        </div>
+        <div id="c-perfil-otro-wrap" style="display:none;"><label class="field-label">Especificar perfil</label><input type="text" id="c-perfil-otro"></div>
+      </div>
+      <p class="hint">Puedes llenar varias fichas por área (una por entrevistado u observación). El área promedia sus fichas y la propiedad promedia sus áreas. Los criterios marcados <b>En desarrollo</b> arrancan en N/A, igual que en julio.</p>
+    </div>
+  </div>
+
+  <div id="c-pillars"></div>
+
+  <div class="card">
+    <div class="card-head"><h2>Evidencia fotográfica <span style="font-weight:400;color:var(--grey);font-size:.8rem">(opcional)</span></h2><span class="pill" id="c-photo-count">0 / 6</span></div>
+    <div class="card-body">
+      <div class="photo-pick">
+        <label>📷 Cámara<input type="file" accept="image/*" capture="environment" id="c-ph-cam"></label>
+        <label>🖼 Galería<input type="file" accept="image/*" multiple id="c-ph-gal"></label>
+      </div>
+      <div class="photo-grid" id="c-photo-grid"></div>
+      <p class="hint">Hasta 6 fotos por ficha (código QR exhibido, escáner, tablet, tarjeta manual…).</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><h2>Hallazgos y plan de acción</h2></div>
+    <div class="card-body">
+      <label class="field-label">Hallazgos clave del área</label>
+      <textarea id="c-hallazgos" style="min-height:70px;margin-bottom:12px;" placeholder="Ej. El QR no está exhibido en el Club; el escáner N°1 requiere reconfiguración…"></textarea>
+      <label class="field-label">Plan de acción propuesto</label>
+      <textarea id="c-plan" style="min-height:70px;" placeholder="Acción · Responsable · Fecha"></textarea>
+    </div>
+  </div>
+
+  <div class="summary">
+    <h2>Resumen de la ficha</h2>
+    <div id="c-summary-rows"></div>
+    <div class="overall">
+      <div class="big" id="c-overall-pct">—</div>
+      <div class="badge" id="c-overall-badge">Sin datos</div>
+    </div>
+  </div>
+
+  <button class="primary" id="c-btn-guardar">Guardar ficha</button>
+  <button class="secondary" id="c-btn-cancel" style="display:none;">Cancelar edición</button>
+  <div class="status-msg" id="c-status-msg"></div>
+
+  <div class="card" id="c-report-actions" style="display:none;margin-top:14px;">
+    <div class="card-head"><h2>Informe de la ficha guardada</h2></div>
+    <div class="card-body">
+      <p id="c-report-label" style="font-size:.85rem;color:var(--grey);margin:0 0 6px;"></p>
+      <button class="secondary" id="c-btn-pdf" style="margin-top:0;">📄 Descargar PDF</button>
+      <button class="secondary" id="c-btn-word">📝 Descargar Word (editable)</button>
+      <button class="secondary" id="c-btn-next">➕ Nueva ficha, misma área</button>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= MEDICIÓN GERENTES ======================= -->
+<section class="view" id="view-ficha">
+  <div class="card">
+    <div class="card-head"><h2>Datos generales</h2><span class="pill" id="edit-flag" style="display:none;">Editando ficha</span></div>
+    <div class="card-body">
+      <div class="meta-grid">
+        <div><label class="field-label">Hotel</label><select id="hotel"></select></div>
+        <div><label class="field-label">Área</label><select id="area"><option value="">Primero elige hotel…</option></select></div>
+        <div><label class="field-label">Mes medido</label><input type="month" id="mes"></div>
+        <div><label class="field-label">Fecha de captura</label><input type="date" id="fecha"></div>
+        <div><label class="field-label">Evaluador</label><input type="text" id="evaluador" value="Erika Quispe"></div>
+        <div><label class="field-label">Informante (quien da los datos)</label><input type="text" id="informante" placeholder="Nombre y apellido"></div>
+        <div>
+          <label class="field-label">Cargo del informante</label>
+          <select id="cargo">
+            <option value="">Seleccionar…</option>
+            <option>Gerente de Recepción</option>
+            <option>Subgerente / Supervisor de Club</option>
+            <option>Agente de Recepción / Club</option>
+            <option>IT / Help Desk</option>
+            <option>Alojamiento Corporativo</option>
+            <option>Otros</option>
+          </select>
+        </div>
+        <div id="cargo_otro_wrap" style="display:none;"><label class="field-label">Especificar cargo</label><input type="text" id="cargo_otro"></div>
+      </div>
+      <p class="hint">Una ficha = un área en un mes. Si llenas más de una ficha para la misma área y mes, el resultado las promedia. Deja vacío lo que no tengas: ese indicador queda N/A y no cuenta.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><h2>Volumen del mes</h2></div>
+    <div class="card-body">
+      <div class="kin" id="vol-inputs"></div>
+      <p class="hint">Grupos, UVC y VIP uso casa van como <b>excluidos</b> mientras sus flujos sigan en desarrollo, para no penalizar al área (mismo criterio de la validación de julio).</p>
+    </div>
+  </div>
+
+  <div id="pillars"></div>
+
+  <div class="card">
+    <div class="card-head"><h2>Evidencia fotográfica <span style="font-weight:400;color:var(--grey);font-size:.8rem">(opcional)</span></h2><span class="pill" id="photo-count">0 / 6</span></div>
+    <div class="card-body">
+      <div class="photo-pick">
+        <label>📷 Cámara<input type="file" accept="image/*" capture="environment" id="ph-cam"></label>
+        <label>🖼 Galería<input type="file" accept="image/*" multiple id="ph-gal"></label>
+      </div>
+      <div class="photo-grid" id="photo-grid"></div>
+      <p class="hint">Hasta 6 fotos por ficha (escáner desconfigurado, tablet, señal Wi-Fi, tarjeta manual, error de PDF…).</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><h2>Hallazgos y plan de acción</h2></div>
+    <div class="card-body">
+      <label class="field-label">Hallazgos clave del área</label>
+      <textarea id="hallazgos" style="min-height:70px;margin-bottom:12px;" placeholder="Ej. Escáner N°1 se desconfigura 2–3 veces por semana; Wi-Fi inestable en el Club en horas pico…"></textarea>
+      <label class="field-label">Plan de acción propuesto</label>
+      <textarea id="plan_accion" style="min-height:70px;" placeholder="Acción · Responsable · Fecha"></textarea>
+    </div>
+  </div>
+
+  <div class="summary">
+    <h2>Resumen de la ficha</h2>
+    <div id="summary-rows"></div>
+    <div class="overall">
+      <div class="big" id="overall-pct">—</div>
+      <div class="badge" id="overall-badge">Sin datos</div>
+    </div>
+  </div>
+
+  <button class="primary" id="btn-guardar">Guardar ficha</button>
+  <button class="secondary" id="btn-cancel-edit" style="display:none;">Cancelar edición</button>
+  <div class="status-msg" id="status-msg"></div>
+
+  <div class="card" id="report-actions" style="display:none;margin-top:14px;">
+    <div class="card-head"><h2>Informe de la ficha guardada</h2></div>
+    <div class="card-body">
+      <p id="report-label" style="font-size:.85rem;color:var(--grey);margin:0 0 6px;"></p>
+      <button class="secondary" id="btn-pdf" style="margin-top:0;">📄 Descargar PDF</button>
+      <button class="secondary" id="btn-word">📝 Descargar Word (editable)</button>
+      <button class="secondary" id="btn-next">➕ Nueva ficha, mismo hotel y mes</button>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= RESULTADOS ======================= -->
+<section class="view" id="view-resultados">
+  <div class="card">
+    <div class="card-head"><h2>Resultados</h2></div>
+    <div class="card-body">
+      <div class="quick-btns" id="res-tipo" style="margin:0 0 12px;">
+        <button type="button" data-tipo="campo" class="active">Validación en campo</button>
+        <button type="button" data-tipo="medicion">Medición gerentes</button>
+      </div>
+      <div class="meta-grid">
+        <div><label class="field-label">Desde (mes)</label><input type="month" id="res-desde"></div>
+        <div><label class="field-label">Hasta (mes)</label><input type="month" id="res-hasta"></div>
+      </div>
+      <p class="hint" style="margin-top:6px">Campo se filtra por mes de la fecha de la ficha; Gerentes por el mes medido.</p>
+      <button class="secondary" id="btn-res-refresh">🔄 Actualizar resultados</button>
+      <p class="hint" id="res-source"></p>
+    </div>
+  </div>
+  <div id="res-container"></div>
+  <button class="secondary" id="btn-res-pdf">📄 Informe consolidado PDF</button>
+  <button class="secondary" id="btn-res-word">📝 Informe consolidado Word (editable)</button>
+</section>
+
+<!-- ======================= HISTORIAL ======================= -->
+<section class="view" id="view-fichas">
+  <div class="card">
+    <div class="card-head"><h2>Historial de fichas</h2><span class="pill" id="hist-count">0</span></div>
+    <div class="card-body">
+      <div class="meta-grid">
+        <div><label class="field-label">Tipo de ficha</label>
+          <select id="f-tipo"><option value="">Todas</option><option value="campo">Validación en campo</option><option value="medicion">Medición gerentes</option></select></div>
+        <div><label class="field-label">Complejo</label>
+          <select id="f-complejo"><option value="">Todos los complejos</option><option value="IOR">IOR (BREPC + DROPC)</option><option value="Varallo">Varallo (DRRPC + SERPC)</option><option value="Flora">Flora (DRFPC)</option><option value="Independientes">Independientes (SEAUA, SDQCT, PUJJD, DRJRC, TBI)</option></select></div>
+        <div><label class="field-label">Hotel</label><select id="f-hotel"></select></div>
+        <div><label class="field-label">Área</label><select id="f-area"><option value="">Todas</option><option value="fd">Front Desk</option><option value="club">Club</option></select></div>
+        <div><label class="field-label">Mes medido (gerentes)</label><input type="month" id="f-mes"></div>
+        <div><label class="field-label">Captura desde</label><input type="date" id="f-desde"></div>
+        <div><label class="field-label">Captura hasta</label><input type="date" id="f-hasta"></div>
+      </div>
+      <div class="quick-btns" id="f-quick">
+        <button type="button" data-range="hoy">Hoy</button>
+        <button type="button" data-range="semana">Esta semana</button>
+        <button type="button" data-range="mes">Este mes</button>
+        <button type="button" data-range="todo" class="active">Todo</button>
+      </div>
+      <p class="filter-desc" id="f-desc">Todas las fichas</p>
+      <div class="export-row">
+        <button class="secondary" id="btn-hist-word">📝 Word editable</button>
+        <button class="secondary" id="btn-hist-pdf">📄 PDF</button>
+      </div>
+      <div id="retry-wrap" style="display:none;margin-top:10px;" class="status-msg local show">
+        <span id="retry-count"></span>
+        <button class="secondary" id="btn-retry" style="margin-top:6px;">🔄 Reintentar sincronización</button>
+      </div>
+    </div>
+  </div>
+  <div id="fichas-container"></div>
+</section>
+
+<!-- ======================= ROADMAP ======================= -->
+<section class="view" id="view-roadmap">
+  <div class="corp" id="rm-summary"></div>
+  <div class="card">
+    <div class="card-head"><h2>Funcionalidades en desarrollo</h2><span class="pill" id="rm-sync">—</span></div>
+    <div class="card-body">
+      <p class="hint" style="margin-top:0">No se evalúan en las áreas (N/A). Actualiza estado y fechas cada mes: se comparte entre dispositivos. Avance = Entregado 100 % · En pruebas 50 % · resto 0 % · Stand by se excluye.</p>
+      <div id="rm-list" style="margin-top:10px;"></div>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<div class="lightbox" id="lightbox"><button id="lb-close">✕</button><img id="lb-img" alt="Foto"></div>
+
+<footer class="note">
+  Grupo Martinón · Check-in Digital · Cumple 100 / Parcial 50 / No cumple 0 / N/A se excluye del cálculo (criterios en campo e indicadores de gerentes).<br>
+  90–100% Implementación Consolidada · 71–89% Requiere Seguimiento · 0–70% Requiere Intervención Prioritaria.<br>
+  Mantén una sola pestaña abierta a la vez para evitar conflictos de sincronización.
+</footer>
+
+<script>
+// ============================ CONFIGURACIÓN ============================
+const SUPABASE_URL = "https://wwnuiriqjbiaggmdrlrk.supabase.co";
+const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Ind3bnVpcmlxamJpYWdnbWRybHJrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY5OTY5NTgsImV4cCI6MjEwMjU3Mjk1OH0.rNehaDSqpjnb5XvJ-KXfnVU6bGJQzYDKnX54w6ISrh0";
+const T_ENTRIES = "checkin_medicion_entries";
+const T_CAMPO = "checkin_campo_entries";
+const TABLE = t => t === "campo" ? T_CAMPO : T_ENTRIES;
+const T_ROADMAP = "checkin_roadmap";
+const LS_ENTRIES = "gm_checkin_medicion_v1";
+const LS_ROADMAP = "gm_checkin_roadmap_v1";
+const LOGO = document.querySelector("img.logo").src;
+
+let sb = null;
+try { if (window.supabase) sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY); } catch(e){ console.warn(e); }
+
+const HOTELS = [
+  {code:"BREPC", name:"Breathless Punta Cana", complejo:"IOR", club:"Xhale Club", julio:89},
+  {code:"DROPC", name:"Dreams Onyx Punta Cana", complejo:"IOR", club:"Preferred Club", julio:88.5},
+  {code:"DRRPC", name:"Dreams Royal Beach Punta Cana", complejo:"Varallo", club:"Preferred Club", julio:91.5},
+  {code:"SERPC", name:"Secrets Royal Beach Punta Cana", complejo:"Varallo", club:"Preferred Club", julio:85.5},
+  {code:"DRFPC", name:"Dreams Flora Punta Cana", complejo:"Flora", club:"Preferred Club", julio:88.5},
+  {code:"SEAUA", name:"Secrets Baby Beach Aruba", complejo:"Independientes", club:"Preferred Club", julio:null},
+  {code:"SDQCT", name:"Hyatt Centric Santo Domingo", complejo:"Independientes", club:"Preferred Club", julio:null},
+  {code:"PUJJD", name:"JdV Royal Beach", complejo:"Independientes", club:"Preferred Club", julio:null},
+  {code:"DRJRC", name:"Dreams Jade", complejo:"Independientes", club:"Preferred Club", julio:null},
+  {code:"TBI", name:"Garden Inn by Hilton", complejo:"Independientes", club:"Preferred Club", julio:null},
+];
+
+// ---------------- Validación en campo: criterios de la plantilla Check-in Digital de la plataforma ----------------
+// dev:true = funcionalidad en desarrollo (roadmap) → arranca en N/A, como en la validación de julio
+const CAMPO_PILLARS = [
+  {key:"ejecucion", title:"1. Ejecución Operativa de la Implementación", items:[
+    {q:"El proceso de Check-in estándar se realiza mediante la solución digital implementada."},
+    {q:"El proceso de Check-in de huéspedes VIP se realiza mediante la solución digital implementada.", dev:true},
+    {q:"El proceso de Check-in de Grupos se realiza mediante la solución digital implementada.", dev:true},
+    {q:"El proceso de No Show se gestiona mediante la solución digital implementada."},
+    {q:"El proceso de prolongación de estadía se gestiona mediante la solución digital implementada."},
+    {q:"El proceso de Check-in de Socios UVC se realiza mediante la solución digital implementada.", dev:true},
+  ]},
+  {key:"funcionalidad", title:"2. Funcionalidad del Sistema", items:[
+    {q:"El código QR se encuentra correctamente exhibido, visible y conforme a los estándares corporativos de presentación e imagen.", dev:true},
+    {q:"El código QR dirige correctamente al proceso de Check-in Digital.", dev:true},
+    {q:"La experiencia posterior al escaneo del QR se visualiza correctamente traducida en el idioma seleccionado.", dev:true},
+    {q:"La firma digital funciona correctamente."},
+    {q:"La información del huésped se guarda correctamente durante el proceso."},
+    {q:"La integración entre las plataformas involucradas funciona correctamente.", dev:true},
+  ]},
+  {key:"infraestructura", title:"3. Infraestructura y Equipamiento", items:[
+    {q:"Las tablets requeridas se encuentran disponibles para la operación."},
+    {q:"Las tablets disponibles se encuentran operativas."},
+    {q:"Los scanners requeridos se encuentran disponibles y operativos."},
+    {q:"La conectividad permite completar el proceso digital sin interrupciones."},
+    {q:"Las estaciones y dispositivos se encuentran correctamente configurados."},
+  ]},
+  {key:"adopcion", title:"4. Adopción Operativa", items:[
+    {q:"El personal demuestra dominio de la herramienta implementada."},
+    {q:"La implementación ha reducido la dependencia de procesos manuales."},
+    {q:"Existe seguimiento por parte de la supervisión o gerencia."},
+  ]},
+];
+const OPTIONS = [
+  {key:"cumple", label:"Cumple", val:100},
+  {key:"parcial", label:"Parcial", val:50},
+  {key:"nocumple", label:"No cumple", val:0},
+  {key:"na", label:"N/A", val:null},
+];
+const VAL_LABEL = {cumple:"Cumple", parcial:"Parcial", nocumple:"No cumple", na:"N/A"};
+const VAL_COLOR = {cumple:"2E7D46", parcial:"B08D3E", nocumple:"B3261E", na:"6B7280"};
+// Resultado por área de los informes de validación de julio 2026 (línea base de referencia)
+const JULIO_AREA = {"BREPC|Front Desk":92,"BREPC|Xhale Club":86,"DROPC|Front Desk":89,"DROPC|Preferred Club":88,
+  "DRRPC|Front Desk":93,"DRRPC|Preferred Club":90,"SERPC|Front Desk":88,"SERPC|Preferred Club":83,"DRFPC|Front Desk":92,"DRFPC|Preferred Club":85};
+const COMPLEJOS = {IOR:["BREPC","DROPC"], Varallo:["DRRPC","SERPC"], Flora:["DRFPC"], Independientes:["SEAUA","SDQCT","PUJJD","DRJRC","TBI"]};
+const hotelLabel = c => { const h = HOTELS.find(x=>x.code===c); return h ? `${h.code} — ${h.name}` : c; };
+const areasOf = c => { const h = HOTELS.find(x=>x.code===c); return h ? (h.club ? ["Front Desk", h.club] : ["Front Desk"]) : []; };
+const julioTxt = h => h.julio === null || h.julio === undefined ? "sin validación en julio" : `Julio ${h.julio}%`;
+const isClub = a => a && a !== "Front Desk";
+
+// ---------------- Datos que se capturan ----------------
+const INPUTS = {
+  tot:{label:"Check-ins totales del mes"},
+  exc:{label:"Check-ins excluidos (Grupos / UVC / VIP uso casa)"},
+  dig:{label:"Check-ins digitales completados"},
+  pa:{label:"Pendientes asignados al área (Cuadro de Seguimiento)"},
+  pc:{label:"Pendientes cerrados"},
+  pu:{label:"Personal que opera la herramienta"},
+  pcap:{label:"Personal capacitado en el flujo vigente"},
+  per:{label:"Tarjetas digitales con pérdida de datos"},
+  pdf:{label:"PDF con error de generación / archivo"},
+  pms:{label:"Registros con transferencia completa a INSiST (vacío = N/A)"},
+  cam:{label:"Cambios de habitación en el mes"},
+  cok:{label:"Cambios actualizados correctamente"},
+  tmp:{label:"Minutos promedio por check-in (muestra de 10)"},
+  eqi:{label:"Equipos instalados (escáneres + tablets)"},
+  eqo:{label:"Equipos operativos al cierre"},
+  wif:{label:"Incidencias Wi-Fi reportadas"},
+  hdd:{label:"Días promedio de resolución Help Desk"},
+  man:{label:"Tarjetas manuales por contingencia (falla sistema, equipo o Wi-Fi)"},
+};
+const VOL = ["tot","exc","dig"];
+const ok = v => v !== null && v !== undefined && v !== "" && !isNaN(v);
+const elig = d => ok(d.tot) ? d.tot - (ok(d.exc) ? d.exc : 0) : null;
+
+// ---------------- Indicadores ----------------
+// dir: "up" mayor es mejor · "down" menor es mejor. green = meta Cumple · amber = límite Parcial
+const KPIS = [
+  {code:"EO-01", pillar:"ejecucion", name:"Cierre de pendientes", desc:"Avance de las acciones asignadas en el Cuadro de Seguimiento (escáneres, monitores, Wi-Fi, tablets).",
+   inputs:["pa","pc"], dir:"up", green:.90, amber:.71, kind:"pct", calc:d => ok(d.pa) && d.pa > 0 && ok(d.pc) ? d.pc / d.pa : null},
+  {code:"EO-02", pillar:"ejecucion", name:"Personal capacitado", desc:"Cobertura de capacitación del personal que opera el flujo vigente.",
+   inputs:["pu","pcap"], dir:"up", green:.90, amber:.71, kind:"pct", calc:d => ok(d.pu) && d.pu > 0 && ok(d.pcap) ? d.pcap / d.pu : null},
+  {code:"FS-01", pillar:"funcionalidad", name:"Integridad de registros", desc:"Registros digitales guardados sin pérdida de información (ref. Grupo Gentile SERPC, familia Manzana DRRPC).",
+   inputs:["per"], uses:"Usa los check-ins digitales del volumen.", dir:"up", green:.995, amber:.98, kind:"pct", dec:1, calc:d => ok(d.dig) && d.dig > 0 && ok(d.per) ? 1 - d.per / d.dig : null},
+  {code:"FS-02", pillar:"funcionalidad", name:"PDF generado y archivado", desc:"Registros cuyo PDF se generó y guardó correctamente en SharePoint.",
+   inputs:["pdf"], uses:"Usa los check-ins digitales del volumen.", dir:"up", green:.99, amber:.97, kind:"pct", dec:1, calc:d => ok(d.dig) && d.dig > 0 && ok(d.pdf) ? 1 - d.pdf / d.dig : null},
+  {code:"FS-03", pillar:"funcionalidad", name:"Transferencia completa a INSiST", desc:"Registros que pasan al PMS con todos los campos (país, ciudad, zip code). Dejar vacío hasta que Desarrollo IT libere la integración.",
+   inputs:["pms"], uses:"Usa los check-ins digitales del volumen.", dir:"up", green:.95, amber:.85, kind:"pct", calc:d => ok(d.dig) && d.dig > 0 && ok(d.pms) ? d.pms / d.dig : null},
+  {code:"FS-04", pillar:"funcionalidad", name:"Cambios de habitación actualizados", desc:"Cambios de habitación que quedan reflejados en el registro digital.",
+   inputs:["cam","cok"], dir:"up", green:.95, amber:.80, kind:"pct", calc:d => ok(d.cam) && d.cam > 0 && ok(d.cok) ? d.cok / d.cam : null},
+  {code:"FS-05", pillar:"funcionalidad", name:"Tiempo promedio de check-in digital", desc:"Desde el escaneo del pasaporte hasta la firma. Umbrales propuestos, a confirmar con Alojamiento.",
+   inputs:["tmp"], dir:"down", green:5, amber:8, kind:"min", calc:d => ok(d.tmp) ? d.tmp : null},
+  {code:"IE-01", pillar:"infraestructura", name:"Disponibilidad de equipos", desc:"Escáneres y tablets operativos frente a los instalados.",
+   inputs:["eqi","eqo"], dir:"up", green:.95, amber:.85, kind:"pct", calc:d => ok(d.eqi) && d.eqi > 0 && ok(d.eqo) ? d.eqo / d.eqi : null},
+  {code:"IE-02", pillar:"infraestructura", name:"Incidencias de conectividad Wi-Fi", desc:"Estabilidad de la red en el área durante la operación.",
+   inputs:["wif"], dir:"down", green:1, amber:3, kind:"num", unit:"incid.", calc:d => ok(d.wif) ? d.wif : null},
+  {code:"IE-03", pillar:"infraestructura", name:"Tiempo de resolución Help Desk", desc:"Días promedio entre el reporte de una falla y su solución.",
+   inputs:["hdd"], dir:"down", green:3, amber:7, kind:"num", unit:"días", calc:d => ok(d.hdd) ? d.hdd : null},
+  {code:"AD-01", pillar:"adopcion", name:"Adopción digital", desc:"Check-ins digitales sobre los check-ins que hoy pueden hacerse en digital (totales − excluidos).",
+   inputs:[], uses:"Se calcula con el volumen del mes.", dir:"up", green:.90, amber:.71, kind:"pct", calc:d => { const e = elig(d); return e && e > 0 && ok(d.dig) ? d.dig / e : null; }},
+  {code:"AD-02", pillar:"adopcion", name:"Uso de tarjeta manual por contingencia", desc:"Dependencia del formato físico por fallas de sistema, equipo o red.",
+   inputs:["man"], uses:"Se divide entre los check-ins elegibles del volumen.", dir:"down", green:.02, amber:.05, kind:"pct", dec:1, calc:d => { const e = elig(d); return e && e > 0 && ok(d.man) ? d.man / e : null; }},
+];
+const PILLARS = [
+  {key:"ejecucion", title:"1. Ejecución Operativa de la Implementación", short:"P1"},
+  {key:"funcionalidad", title:"2. Funcionalidad del Sistema", short:"P2"},
+  {key:"infraestructura", title:"3. Infraestructura y Equipamiento", short:"P3"},
+  {key:"adopcion", title:"4. Adopción Operativa", short:"P4"},
+];
+const ST_LABEL = {cumple:"Cumple", parcial:"Parcial", nocumple:"No cumple", na:"N/A"};
+const ST_COLOR = {cumple:"#2E7D46", parcial:"#C9A227", nocumple:"#B3261E", na:"#6B7280"};
+const ST_PTS = {cumple:100, parcial:50, nocumple:0};
+
+function kState(k, v){
+  if (v === null || v === undefined) return "na";
+  if (k.dir === "down") return v <= k.green ? "cumple" : v <= k.amber ? "parcial" : "nocumple";
+  return v >= k.green - 1e-9 ? "cumple" : v >= k.amber - 1e-9 ? "parcial" : "nocumple";
+}
+function fmtK(k, v){
+  if (v === null || v === undefined || isNaN(v)) return "N/A";
+  if (k.kind === "pct") return (v * 100).toFixed(k.dec || 0) + "%";
+  if (k.kind === "min") return (+v).toFixed(1) + " min";
+  return (+v).toFixed(k.unit === "días" ? 1 : 0) + " " + k.unit;
+}
+function metaText(k){
+  const s = k.dir === "down" ? "≤" : "≥";
+  return `Meta ${s} ${fmtK(k, k.green)} · Parcial ${s} ${fmtK(k, k.amber)}`;
+}
+
+// ============================ UTILIDADES ============================
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const mean = arr => { const v = arr.filter(x => x !== null && x !== undefined && !isNaN(x)); return v.length ? v.reduce((a,b)=>a+b,0)/v.length : null; };
+const fmt = p => p === null || p === undefined ? "—" : Math.round(p) + "%";
+function band(p){
+  if (p === null || p === undefined) return {cls:"", label:"Sin datos", color:"#6B7280"};
+  const r = Math.round(p);
+  if (r >= 90) return {cls:"green", label:"Implementación Consolidada", color:"#2E7D46"};
+  if (r >= 71) return {cls:"yellow", label:"Requiere Seguimiento", color:"#C9A227"};
+  return {cls:"red", label:"Requiere Intervención Prioritaria", color:"#B3261E"};
+}
+// Si la red está lenta o caída, no dejar la pantalla esperando: seguir con lo guardado en el dispositivo
+const withTimeout = (q, ms) => Promise.race([q, new Promise(r => setTimeout(() => r({data:null, error:{message:"Sin respuesta de la nube"}}), ms))]);
+function lsGet(k, d){ try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch(e){ return d; } }
+function lsSet(k, v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch(e){} }
+function today(){ const d = new Date(); return new Date(d.getTime() - d.getTimezoneOffset()*60000).toISOString().slice(0,10); }
+const thisMonth = () => today().slice(0,7);
+function showStatus(msg, type){ const el = $("status-msg"); el.className = "status-msg show " + type; el.textContent = msg; }
+const MESES = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+const fmtMes = m => { if (!m) return "—"; const [y, mm] = m.split("-"); return `${MESES[+mm - 1]} ${y}`; };
+function fmtDay(s){ if (!s) return ""; const [y,m,d] = s.split("-"); return `${d}/${m}/${y}`; }
+
+// ============================ FICHA ============================
+function inputHTML(key){
+  return `<div><label for="in-${key}">${esc(INPUTS[key].label)}</label><input type="number" min="0" step="any" inputmode="decimal" id="in-${key}"></div>`;
+}
+function buildForm(){
+  $("vol-inputs").innerHTML = VOL.map(inputHTML).join("");
+  const root = $("pillars");
+  PILLARS.forEach(p => {
+    const card = document.createElement("div");
+    card.className = "card";
+    card.innerHTML = `<div class="card-head"><h2>${esc(p.title)}</h2><div class="score" data-score-for="${p.key}">—</div></div><div class="card-body"></div>`;
+    const body = card.querySelector(".card-body");
+    KPIS.filter(k => k.pillar === p.key).forEach(k => {
+      const it = document.createElement("div"); it.className = "kpi"; it.dataset.code = k.code;
+      it.innerHTML = `<div class="kt"><div><span class="code">${k.code}</span><b>${esc(k.name)}</b></div></div>
+        <p class="kd">${esc(k.desc)}</p>
+        ${k.inputs.length ? `<div class="kin">${k.inputs.map(inputHTML).join("")}</div>` : ""}
+        ${k.uses ? `<p class="uses">${esc(k.uses)}</p>` : ""}
+        <p class="warn">Revisa los datos: el resultado supera el 100 %.</p>
+        <div class="kres"><div><div class="kv">N/A</div><div class="km">${esc(metaText(k))}</div></div><span class="st">N/A</span></div>
+        <textarea class="comentario" placeholder="Comentario / evidencia"></textarea>`;
+      body.appendChild(it);
+    });
+    root.appendChild(card);
+  });
+  document.querySelectorAll("#view-ficha input[type=number]").forEach(i => i.addEventListener("input", recalc));
+  $("summary-rows").innerHTML = PILLARS.map(p => `<div class="summary-row"><span>${esc(p.title)}</span><span class="val" id="sum-${p.key}">—</span></div>`).join("");
+}
+function readDatos(){
+  const d = {};
+  Object.keys(INPUTS).forEach(k => { const v = $("in-" + k).value; d[k] = v === "" ? null : Number(v); });
+  return d;
+}
+function computeAll(d){
+  const kpis = {}, scores = {};
+  KPIS.forEach(k => {
+    const v = k.calc(d);
+    const val = v === null || !isFinite(v) ? null : v;
+    const st = kState(k, val);
+    kpis[k.code] = {valor:val, estado:st, puntos:st === "na" ? null : ST_PTS[st]};
+  });
+  PILLARS.forEach(p => scores[p.key] = mean(KPIS.filter(k => k.pillar === p.key).map(k => kpis[k.code].puntos)));
+  scores.general = mean(KPIS.map(k => kpis[k.code].puntos));
+  return {kpis, scores};
+}
+function collect(){
+  const datos = readDatos();
+  const {kpis, scores} = computeAll(datos);
+  const comentarios = {};
+  document.querySelectorAll("#pillars .kpi").forEach(it => { const c = it.querySelector("textarea").value.trim(); if (c) comentarios[it.dataset.code] = c; });
+  return {datos, kpis, scores, comentarios};
+}
+function recalc(){
+  const {kpis, scores} = collect();
+  KPIS.forEach(k => {
+    const it = document.querySelector(`.kpi[data-code="${k.code}"]`), r = kpis[k.code];
+    it.querySelector(".kv").textContent = fmtK(k, r.valor);
+    const st = it.querySelector(".st"); st.className = "st " + r.estado; st.textContent = ST_LABEL[r.estado];
+    it.querySelector(".warn").classList.toggle("show", k.kind === "pct" && r.valor !== null && r.valor > 1.0001);
+  });
+  PILLARS.forEach(p => {
+    document.querySelector(`[data-score-for="${p.key}"]`).textContent = fmt(scores[p.key]);
+    $("sum-" + p.key).textContent = fmt(scores[p.key]);
+  });
+  $("overall-pct").textContent = fmt(scores.general);
+  const b = band(scores.general);
+  $("overall-badge").className = "badge " + b.cls; $("overall-badge").textContent = b.label;
+}
+function clearAnswers(){
+  document.querySelectorAll("#view-ficha input[type=number]").forEach(x => x.value = "");
+  document.querySelectorAll("#pillars textarea").forEach(x => x.value = "");
+  $("hallazgos").value = ""; $("plan_accion").value = "";
+  PH.med.list = []; renderPhotoGrid("med");
+  recalc();
+}
+function fillHotelSelect(sel, withAll){
+  sel.innerHTML = (withAll ? '<option value="">Todos</option>' : '<option value="">Seleccionar…</option>') +
+    HOTELS.map(h => `<option value="${h.code}">${esc(hotelLabel(h.code))}</option>`).join("");
+}
+function fillAreaSelect(hotel, keep){
+  const list = areasOf(hotel);
+  $("area").innerHTML = (hotel ? '<option value="">Seleccionar…</option>' : '<option value="">Primero elige hotel…</option>') + list.map(a => `<option>${esc(a)}</option>`).join("");
+  if (keep && list.includes(keep)) $("area").value = keep;
+}
+
+// ============================ FOTOS ============================
+// Bucket compartido con Recorrido (prefijo "checkin_"). Si Storage falla, la foto queda dentro de la ficha.
+const SB_BUCKET = "recorrido-fotos";
+const MAX_PHOTOS = 6;
+const PH = {med:{list:[], grid:"photo-grid", count:"photo-count"}, campo:{list:[], grid:"c-photo-grid", count:"c-photo-count"}};
+function compressImage(file){
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = ev => {
+      const img = new Image();
+      img.onload = () => {
+        const scale = Math.min(1, 1000 / img.width);
+        const c = document.createElement("canvas");
+        c.width = Math.round(img.width * scale); c.height = Math.round(img.height * scale);
+        c.getContext("2d").drawImage(img, 0, 0, c.width, c.height);
+        resolve(c.toDataURL("image/jpeg", 0.65));
+      };
+      img.onerror = reject; img.src = ev.target.result;
+    };
+    reader.onerror = reject; reader.readAsDataURL(file);
+  });
+}
+async function addPhotoFiles(files, t){
+  const L = PH[t].list;
+  for (const f of files) {
+    if (L.length >= MAX_PHOTOS) { alert(`Máximo ${MAX_PHOTOS} fotos por ficha.`); break; }
+    try { L.push({src: await compressImage(f), desc: ""}); } catch(e){ alert("No se pudo procesar una foto."); }
+  }
+  renderPhotoGrid(t);
+}
+function renderPhotoGrid(t){
+  const C = PH[t], g = $(C.grid); g.innerHTML = "";
+  C.list.forEach((p, i) => {
+    const d = document.createElement("div"); d.className = "photo-card";
+    d.innerHTML = `<img src="${p.src}" alt="Foto ${i+1}"><button class="rm" title="Quitar">✕</button><input type="text" placeholder="Descripción (opcional)" value="${esc(p.desc)}">`;
+    d.querySelector("img").onclick = () => openLightbox(p.src);
+    d.querySelector(".rm").onclick = () => { C.list.splice(i, 1); renderPhotoGrid(t); };
+    d.querySelector("input").oninput = ev => { p.desc = ev.target.value; };
+    g.appendChild(d);
+  });
+  $(C.count).textContent = `${C.list.length} / ${MAX_PHOTOS}`;
+}
+function openLightbox(src){ $("lb-img").src = src; $("lightbox").classList.add("open"); }
+function dataUrlToBytes(u){ const b = atob(u.split(",")[1] || ""); const o = new Uint8Array(b.length); for (let i = 0; i < b.length; i++) o[i] = b.charCodeAt(i); return o; }
+function storageName(url){ const k = "/object/public/" + SB_BUCKET + "/"; const i = (url||"").indexOf(k); return i > -1 ? url.slice(i + k.length) : null; }
+async function uploadPhoto(dataUrl, name){
+  const res = await fetch(`${SUPABASE_URL}/storage/v1/object/${SB_BUCKET}/${name}`, {
+    method:"POST",
+    headers:{apikey:SUPABASE_ANON_KEY, Authorization:`Bearer ${SUPABASE_ANON_KEY}`, "Content-Type":"image/jpeg", "x-upsert":"true"},
+    body:new Blob([dataUrlToBytes(dataUrl)], {type:"image/jpeg"})
+  });
+  if (!res.ok) { const err = new Error("Storage " + res.status); err.storage = true; throw err; }
+  return `${SUPABASE_URL}/storage/v1/object/public/${SB_BUCKET}/${name}`;
+}
+async function uploadEntryPhotos(e){
+  for (let i = 0; i < (e.fotos || []).length; i++) {
+    const p = e.fotos[i];
+    if (!p.src || !p.src.startsWith("data:")) continue;
+    try { p.src = await uploadPhoto(p.src, `checkin_${e.hotel}_${Date.now()}_${i}.jpg`); }
+    catch(err){ if (err.storage) { console.warn("Storage no disponible; la foto queda dentro de la ficha"); return; } throw err; }
+  }
+}
+async function deletePhotos(e){
+  const names = (e.fotos || []).map(p => storageName(p.src)).filter(Boolean);
+  if (!names.length) return;
+  try {
+    await fetch(`${SUPABASE_URL}/storage/v1/object/${SB_BUCKET}`, {method:"DELETE",
+      headers:{apikey:SUPABASE_ANON_KEY, Authorization:`Bearer ${SUPABASE_ANON_KEY}`, "Content-Type":"application/json"},
+      body:JSON.stringify({prefixes:names})});
+  } catch(_){}
+}
+
+// ============================ FICHAS (local + Supabase) ============================
+let entries = lsGet(LS_ENTRIES, []);
+let editing = null, lastSaved = null;
+const saveLocal = () => { try { localStorage.setItem(LS_ENTRIES, JSON.stringify(entries)); } catch(e){ console.warn("Almacenamiento local lleno", e); } };
+const tipoOf = e => e.tipo === "campo" ? "campo" : "medicion";
+function toRow(e){
+  const base = {hotel:e.hotel, area:e.area, fecha:e.fecha, evaluador:e.evaluador,
+    hallazgos:e.hallazgos, plan_accion:e.plan_accion, fotos:e.fotos || [],
+    score_ejecucion:e.score_ejecucion, score_funcionalidad:e.score_funcionalidad,
+    score_infraestructura:e.score_infraestructura, score_adopcion:e.score_adopcion, score_general:e.score_general};
+  if (tipoOf(e) === "campo") return Object.assign(base, {nombre_entrevistado:e.nombre_entrevistado, perfil_entrevistado:e.perfil_entrevistado, respuestas:e.respuestas || []});
+  return Object.assign(base, {mes:e.mes, informante:e.informante, cargo_informante:e.cargo_informante,
+    datos:e.datos, kpis:e.kpis, comentarios:e.comentarios || {}});
+}
+function fromRow(r, tipo){
+  const e = Object.assign({local_id:`sb_${tipo}_${r.id}`, supabase_id:r.id, synced:true}, r, {tipo, fotos:r.fotos || []});
+  if (tipo === "campo") { e.respuestas = r.respuestas || []; e.mes = (r.fecha || "").slice(0,7); }
+  else { e.datos = r.datos || {}; e.kpis = r.kpis || {}; e.comentarios = r.comentarios || {}; }
+  return e;
+}
+async function pushEntry(e){
+  if (!sb) return false;
+  const T = TABLE(tipoOf(e));
+  try {
+    await uploadEntryPhotos(e); saveLocal();
+    if (e.supabase_id) {
+      const { error } = await sb.from(T).update(toRow(e)).eq("id", e.supabase_id);
+      if (error) throw error;
+    } else {
+      const { data, error } = await sb.from(T).insert(toRow(e)).select().single();
+      if (error) throw error;
+      e.supabase_id = data.id;
+    }
+    e.synced = true; saveLocal(); return true;
+  } catch(err){ console.warn("sync:", err.message || err); e.synced = false; saveLocal(); return false; }
+}
+function cargoValue(){
+  let c = $("cargo").value;
+  if (c === "Otros" && $("cargo_otro").value.trim()) c = "Otros: " + $("cargo_otro").value.trim();
+  return c;
+}
+async function guardar(){
+  const hotel = $("hotel").value, area = $("area").value, mes = $("mes").value, fecha = $("fecha").value;
+  if (!hotel || !area || !mes || !fecha) { showStatus("Completa hotel, área, mes medido y fecha.", "err"); return; }
+  const {datos, kpis, scores, comentarios} = collect();
+  const medidos = KPIS.filter(k => kpis[k.code].estado !== "na").length;
+  if (!medidos) { showStatus("Captura los datos de al menos un indicador.", "err"); return; }
+  const raros = KPIS.filter(k => k.kind === "pct" && kpis[k.code].valor > 1.0001).map(k => k.code);
+  if (raros.length && !confirm(`Los indicadores ${raros.join(", ")} superan el 100 %. ¿Guardar igual?`)) return;
+  if (medidos < KPIS.length && !confirm(`${KPIS.length - medidos} indicador(es) quedan N/A y no cuentan en el promedio. ¿Guardar igual?`)) return;
+  let e = editing ? entries.find(x => x.local_id === editing) : null;
+  if (!e) { e = {local_id:"l_" + Date.now(), supabase_id:null, synced:false}; entries.unshift(e); }
+  Object.assign(e, {
+    tipo:"medicion", hotel, area, mes, fecha, evaluador:$("evaluador").value.trim(),
+    informante:$("informante").value.trim(), cargo_informante:cargoValue(),
+    datos, kpis, comentarios, hallazgos:$("hallazgos").value.trim(), plan_accion:$("plan_accion").value.trim(),
+    fotos: PH.med.list.map(p => ({src:p.src, desc:(p.desc||"").trim()})),
+    score_ejecucion:scores.ejecucion, score_funcionalidad:scores.funcionalidad,
+    score_infraestructura:scores.infraestructura, score_adopcion:scores.adopcion,
+    score_general:scores.general, updated_local:new Date().toISOString()
+  });
+  saveLocal(); cacheRows = null;
+  showStatus("Guardando…", "local");
+  const okSync = await pushEntry(e);
+  showStatus(okSync ? `Ficha guardada y sincronizada · ${hotelLabel(hotel)} · ${area} · ${fmtMes(mes)} · ${fmt(scores.general)}`
+                    : "Guardada en este dispositivo. Se sincronizará al reintentar (pestaña Historial).", okSync ? "ok" : "local");
+  lastSaved = e;
+  $("report-label").textContent = `${hotelLabel(hotel)} · ${area} · ${fmtMes(mes)} · ${fmt(scores.general)}`;
+  $("report-actions").style.display = "block";
+  setEditing(null);
+}
+function setEditing(id){
+  editing = id;
+  $("edit-flag").style.display = id ? "inline-block" : "none";
+  $("btn-cancel-edit").style.display = id ? "block" : "none";
+  $("btn-guardar").textContent = id ? "Guardar cambios" : "Guardar ficha";
+}
+function nextFicha(){
+  clearAnswers();
+  $("area").value = ""; $("informante").value = ""; $("cargo").value = ""; $("cargo_otro").value = ""; $("cargo_otro_wrap").style.display = "none";
+  $("report-actions").style.display = "none"; $("status-msg").className = "status-msg";
+  setEditing(null);
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+function loadIntoForm(e){
+  switchView("ficha");
+  $("hotel").value = e.hotel; fillAreaSelect(e.hotel, e.area);
+  $("mes").value = e.mes || ""; $("fecha").value = e.fecha || ""; $("evaluador").value = e.evaluador || "";
+  $("informante").value = e.informante || "";
+  const c = e.cargo_informante || "";
+  if (c.startsWith("Otros: ")) { $("cargo").value = "Otros"; $("cargo_otro").value = c.slice(7); $("cargo_otro_wrap").style.display = "block"; }
+  else { $("cargo").value = c; $("cargo_otro_wrap").style.display = "none"; }
+  clearAnswers();
+  Object.keys(INPUTS).forEach(k => { const v = (e.datos || {})[k]; $("in-" + k).value = ok(v) ? v : ""; });
+  document.querySelectorAll("#pillars .kpi").forEach(it => it.querySelector("textarea").value = (e.comentarios || {})[it.dataset.code] || "");
+  $("hallazgos").value = e.hallazgos || ""; $("plan_accion").value = e.plan_accion || "";
+  PH.med.list = (e.fotos || []).map(f => ({src:f.src, desc:f.desc || ""})); renderPhotoGrid("med");
+  if (!entries.some(x => x.local_id === e.local_id)) entries.unshift(e);
+  recalc(); setEditing(e.local_id);
+  $("report-actions").style.display = "none"; $("status-msg").className = "status-msg";
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+async function deleteEntry(e){
+  const etq = tipoOf(e) === "campo" ? fmtDay(e.fecha) : fmtMes(e.mes);
+  if (!confirm(`¿Eliminar la ficha de ${e.hotel} · ${e.area} (${etq})? Esta acción no se puede deshacer.`)) return;
+  if (sb && e.supabase_id) {
+    const { error } = await sb.from(TABLE(tipoOf(e))).delete().eq("id", e.supabase_id);
+    if (error) { alert("No se pudo eliminar en la nube: " + error.message); return; }
+    deletePhotos(e);
+  }
+  entries = entries.filter(x => x.local_id !== e.local_id && !(e.supabase_id && x.supabase_id === e.supabase_id && tipoOf(x) === tipoOf(e)));
+  saveLocal(); cacheRows = null; await renderHistorial(true);
+}
+let cacheRows = null, cacheSource = "este dispositivo";
+async function fetchAll(force){
+  if (cacheRows && !force) return {rows:cacheRows, source:cacheSource};
+  let rows = null, source = "este dispositivo";
+  if (sb) {
+    const [m, c] = await Promise.all([
+      withTimeout(sb.from(T_ENTRIES).select("*").order("mes", {ascending:false}), 8000),
+      withTimeout(sb.from(T_CAMPO).select("*").order("fecha", {ascending:false}), 8000)]);
+    if (m.error) console.warn("medición:", m.error.message);
+    if (c.error) console.warn("campo:", c.error.message);
+    if (!(m.error && c.error)) {
+      const pending = entries.filter(x => !x.synced);
+      // si una de las dos tablas no respondió, conservamos lo local de ese tipo
+      const keepLocal = t => entries.filter(x => x.synced && tipoOf(x) === t);
+      const cloud = [...(m.error ? keepLocal("medicion") : m.data.map(r => fromRow(r, "medicion"))),
+                     ...(c.error ? keepLocal("campo") : c.data.map(r => fromRow(r, "campo")))];
+      rows = pending.concat(cloud.filter(x => !pending.some(p => p.supabase_id && p.supabase_id === x.supabase_id && tipoOf(p) === tipoOf(x))));
+      entries = rows.slice(); saveLocal();
+      source = "la nube (todos los dispositivos)";
+    }
+  }
+  if (!rows) rows = entries.slice();
+  cacheRows = rows; cacheSource = source;
+  return {rows, source};
+}
+
+// ============================ VALIDACIÓN EN CAMPO ============================
+let cEditing = null, cLastSaved = null;
+const fichaFile = e => tipoOf(e) === "campo" ? `CheckIn_Campo_${e.hotel}_${slug(e.area)}_${e.fecha}.docx` : `CheckIn_Gerentes_${e.hotel}_${slug(e.area)}_${e.mes}.docx`;
+function cStatus(msg, type){ const el = $("c-status-msg"); el.className = "status-msg show " + type; el.textContent = msg; }
+function fillCAreaSelect(hotel, keep){
+  const list = areasOf(hotel);
+  $("c-area").innerHTML = (hotel ? '<option value="">Seleccionar…</option>' : '<option value="">Primero elige hotel…</option>') + list.map(a => `<option>${esc(a)}</option>`).join("");
+  if (keep && list.includes(keep)) $("c-area").value = keep;
+  else if (list.length === 1) $("c-area").value = list[0];
+}
+function buildCampo(){
+  const root = $("c-pillars"); let n = 0;
+  CAMPO_PILLARS.forEach(p => {
+    const card = document.createElement("div");
+    card.className = "card"; card.dataset.section = p.key;
+    card.innerHTML = `<div class="card-head"><h2>${esc(p.title)}</h2><div class="score" data-cscore-for="${p.key}">—</div></div><div class="card-body"></div>`;
+    const body = card.querySelector(".card-body");
+    p.items.forEach((it, i) => {
+      n++;
+      const d = document.createElement("div"); d.className = "item"; d.dataset.idx = i;
+      d.innerHTML = `<p class="q"><b>${n}.</b> ${esc(it.q)}${it.dev ? '<span class="devtag">En desarrollo</span>' : ""}</p><div class="options">` +
+        OPTIONS.map(o => `<label class="opt ${o.key}"><input type="radio" name="c_${p.key}_${i}" value="${o.key}">${o.label}</label>`).join("") +
+        `</div><textarea class="comentario" placeholder="Observación / evidencia"></textarea>`;
+      body.appendChild(d);
+    });
+    root.appendChild(card);
+  });
+  root.addEventListener("click", e => {
+    const lab = e.target.closest(".opt"); if (!lab) return;
+    e.preventDefault();
+    const input = lab.querySelector("input");
+    if (lab.classList.contains("sel")) { input.checked = false; lab.classList.remove("sel"); cRecalc(); return; }
+    lab.parentElement.querySelectorAll(".opt").forEach(x => x.classList.remove("sel"));
+    lab.classList.add("sel"); input.checked = true; cRecalc();
+  });
+  $("c-summary-rows").innerHTML = CAMPO_PILLARS.map(p => `<div class="summary-row"><span>${esc(p.title)}</span><span class="val" id="c-sum-${p.key}">—</span></div>`).join("");
+  cClear();
+}
+function setOpt(it, valor){
+  it.querySelectorAll(".opt").forEach(x => x.classList.remove("sel"));
+  it.querySelectorAll("input").forEach(x => x.checked = false);
+  if (!valor) return;
+  const inp = it.querySelector(`input[value="${valor}"]`); if (inp) { inp.checked = true; inp.parentElement.classList.add("sel"); }
+}
+function cCollect(){
+  const respuestas = [], scores = {};
+  CAMPO_PILLARS.forEach(p => {
+    const vals = [];
+    p.items.forEach((it, i) => {
+      const el = document.querySelector(`#c-pillars [data-section="${p.key}"] .item[data-idx="${i}"]`);
+      const chk = el.querySelector("input:checked"), valor = chk ? chk.value : "";
+      respuestas.push({seccion:p.key, idx:i, pregunta:it.q, valor, comentario:el.querySelector("textarea").value.trim(), dev:!!it.dev});
+      if (valor && valor !== "na") vals.push(OPTIONS.find(o => o.key === valor).val);
+    });
+    scores[p.key] = mean(vals);
+  });
+  scores.general = mean(respuestas.filter(r => r.valor && r.valor !== "na").map(r => OPTIONS.find(o => o.key === r.valor).val));
+  return {respuestas, scores};
+}
+function cRecalc(){
+  const {scores} = cCollect();
+  CAMPO_PILLARS.forEach(p => {
+    document.querySelector(`[data-cscore-for="${p.key}"]`).textContent = fmt(scores[p.key]);
+    $("c-sum-" + p.key).textContent = fmt(scores[p.key]);
+  });
+  $("c-overall-pct").textContent = fmt(scores.general);
+  const b = band(scores.general);
+  $("c-overall-badge").className = "badge " + b.cls; $("c-overall-badge").textContent = b.label;
+}
+function cClear(){
+  CAMPO_PILLARS.forEach(p => p.items.forEach((it, i) => {
+    const el = document.querySelector(`#c-pillars [data-section="${p.key}"] .item[data-idx="${i}"]`);
+    setOpt(el, it.dev ? "na" : ""); el.querySelector("textarea").value = "";
+  }));
+  $("c-hallazgos").value = ""; $("c-plan").value = "";
+  PH.campo.list = []; renderPhotoGrid("campo");
+  cRecalc();
+}
+function setCEditing(id){
+  cEditing = id;
+  $("c-edit-flag").style.display = id ? "inline-block" : "none";
+  $("c-btn-cancel").style.display = id ? "block" : "none";
+  $("c-btn-guardar").textContent = id ? "Guardar cambios" : "Guardar ficha";
+}
+async function cGuardar(){
+  const hotel = $("c-hotel").value, area = $("c-area").value, fecha = $("c-fecha").value;
+  let perfil = $("c-perfil").value;
+  if (perfil === "Otros" && $("c-perfil-otro").value.trim()) perfil = "Otros: " + $("c-perfil-otro").value.trim();
+  if (!hotel || !area || !fecha) { cStatus("Completa hotel, área y fecha.", "err"); return; }
+  const {respuestas, scores} = cCollect();
+  const evaluados = respuestas.filter(r => r.valor && r.valor !== "na").length;
+  if (!evaluados) { cStatus("Califica al menos un criterio.", "err"); return; }
+  const sin = respuestas.filter(r => !r.valor).length;
+  if (sin && !confirm(`Hay ${sin} criterio(s) sin calificar. No cuentan en el promedio. ¿Guardar igual?`)) return;
+  let e = cEditing ? entries.find(x => x.local_id === cEditing) : null;
+  if (!e) { e = {local_id:"l_" + Date.now(), supabase_id:null, synced:false}; entries.unshift(e); }
+  Object.assign(e, {
+    tipo:"campo", hotel, area, fecha, mes:fecha.slice(0,7), evaluador:$("c-evaluador").value.trim(),
+    nombre_entrevistado:$("c-nombre").value.trim(), perfil_entrevistado:perfil,
+    respuestas, hallazgos:$("c-hallazgos").value.trim(), plan_accion:$("c-plan").value.trim(),
+    fotos: PH.campo.list.map(p => ({src:p.src, desc:(p.desc||"").trim()})),
+    score_ejecucion:scores.ejecucion, score_funcionalidad:scores.funcionalidad,
+    score_infraestructura:scores.infraestructura, score_adopcion:scores.adopcion,
+    score_general:scores.general, updated_local:new Date().toISOString()
+  });
+  saveLocal(); cacheRows = null;
+  cStatus("Guardando…", "local");
+  const okSync = await pushEntry(e);
+  cStatus(okSync ? `Ficha guardada y sincronizada · ${hotelLabel(hotel)} · ${area} · ${fmt(scores.general)}`
+                 : "Guardada en este dispositivo. Se sincronizará al reintentar (pestaña Historial).", okSync ? "ok" : "local");
+  cLastSaved = e;
+  $("c-report-label").textContent = `${hotelLabel(hotel)} · ${area} · ${e.nombre_entrevistado || e.perfil_entrevistado || "Observación"} · ${fmt(scores.general)}`;
+  $("c-report-actions").style.display = "block";
+  setCEditing(null);
+}
+function cNext(){
+  cClear();
+  $("c-nombre").value = ""; $("c-perfil").value = ""; $("c-perfil-otro").value = ""; $("c-perfil-otro-wrap").style.display = "none";
+  $("c-report-actions").style.display = "none"; $("c-status-msg").className = "status-msg";
+  setCEditing(null);
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+function cLoad(e){
+  switchView("campo");
+  $("c-hotel").value = e.hotel; fillCAreaSelect(e.hotel, e.area);
+  $("c-fecha").value = e.fecha || ""; $("c-evaluador").value = e.evaluador || "";
+  $("c-nombre").value = e.nombre_entrevistado || "";
+  const p = e.perfil_entrevistado || "";
+  if (p.startsWith("Otros: ")) { $("c-perfil").value = "Otros"; $("c-perfil-otro").value = p.slice(7); $("c-perfil-otro-wrap").style.display = "block"; }
+  else { $("c-perfil").value = p; $("c-perfil-otro-wrap").style.display = "none"; }
+  cClear();
+  CAMPO_PILLARS.forEach(pl => pl.items.forEach((it, i) => {
+    const el = document.querySelector(`#c-pillars [data-section="${pl.key}"] .item[data-idx="${i}"]`);
+    const r = (e.respuestas || []).find(x => x.seccion === pl.key && x.idx === i);
+    setOpt(el, r ? r.valor : ""); el.querySelector("textarea").value = r ? r.comentario || "" : "";
+  }));
+  $("c-hallazgos").value = e.hallazgos || ""; $("c-plan").value = e.plan_accion || "";
+  PH.campo.list = (e.fotos || []).map(f => ({src:f.src, desc:f.desc || ""})); renderPhotoGrid("campo");
+  if (!entries.some(x => x.local_id === e.local_id)) entries.unshift(e);
+  cRecalc(); setCEditing(e.local_id);
+  $("c-report-actions").style.display = "none"; $("c-status-msg").className = "status-msg";
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+
+// ============================ HISTORIAL ============================
+function histFilters(){ return {tipo:$("f-tipo").value, comp:$("f-complejo").value, hotel:$("f-hotel").value, area:$("f-area").value, mes:$("f-mes").value, desde:$("f-desde").value, hasta:$("f-hasta").value}; }
+function histFiltered(rows){
+  const f = histFilters();
+  return rows.filter(e => (!f.tipo || tipoOf(e) === f.tipo) &&
+    (!f.comp || COMPLEJOS[f.comp].includes(e.hotel)) && (!f.hotel || e.hotel === f.hotel) &&
+    (!f.area || (f.area === "club" ? isClub(e.area) : e.area === "Front Desk")) &&
+    (!f.mes || (tipoOf(e) === "medicion" && e.mes === f.mes)) &&
+    (!f.desde || e.fecha >= f.desde) && (!f.hasta || e.fecha <= f.hasta)
+  ).sort((a,b) => (b.fecha||"").localeCompare(a.fecha||"") || (b.mes||"").localeCompare(a.mes||""));
+}
+function histDescription(){
+  const f = histFilters(), parts = [];
+  if (f.tipo) parts.push(f.tipo === "campo" ? "Validación en campo" : "Medición gerentes");
+  if (f.comp) parts.push("Complejo " + f.comp);
+  if (f.hotel) parts.push(hotelLabel(f.hotel));
+  if (f.area) parts.push(f.area === "club" ? "Club" : "Front Desk");
+  if (f.mes) parts.push("Mes " + fmtMes(f.mes));
+  if (f.desde || f.hasta) parts.push("Captura: " + (f.desde ? fmtDay(f.desde) : "inicio") + " – " + (f.hasta ? fmtDay(f.hasta) : "hoy"));
+  return parts.length ? parts.join(" · ") : "Todas las fichas";
+}
+function ymd(d){ return d.getFullYear() + "-" + String(d.getMonth()+1).padStart(2,"0") + "-" + String(d.getDate()).padStart(2,"0"); }
+function setQuick(range){
+  document.querySelectorAll("#f-quick button").forEach(b => b.classList.toggle("active", b.dataset.range === range));
+  if (!range) return;
+  const t = new Date();
+  if (range === "todo") { $("f-desde").value = ""; $("f-hasta").value = ""; return; }
+  let st = new Date(t);
+  if (range === "semana") st.setDate(t.getDate() - ((t.getDay() + 6) % 7));
+  if (range === "mes") st = new Date(t.getFullYear(), t.getMonth(), 1);
+  $("f-desde").value = ymd(st); $("f-hasta").value = ymd(t);
+}
+let lastHist = [];
+async function renderHistorial(force){
+  const {rows} = await fetchAll(force);
+  const list = histFiltered(rows); lastHist = list;
+  $("hist-count").textContent = list.length;
+  $("f-desc").textContent = histDescription() + ` · ${list.length} ficha(s)`;
+  const c = $("fichas-container");
+  c.innerHTML = list.length ? "" : '<p class="hint">No hay fichas con esos filtros.</p>';
+  list.forEach(e => {
+    const b = band(e.score_general);
+    const d = document.createElement("div"); d.className = "entry-row";
+    const fotos = (e.fotos || []).filter(p => p.src);
+    const campo = tipoOf(e) === "campo";
+    let sub;
+    if (campo) {
+      const r = e.respuestas || [], nC = r.filter(x => x.valor && x.valor !== "na").length;
+      sub = `${esc(e.nombre_entrevistado || "—")} · ${esc(e.perfil_entrevistado || "—")} · ${nC}/${r.length} criterios evaluados`;
+    } else {
+      const nM = KPIS.filter(k => e.kpis && e.kpis[k.code] && e.kpis[k.code].estado !== "na").length;
+      sub = `Mes ${esc(fmtMes(e.mes))} · ${esc(e.informante || "—")} · ${esc(e.cargo_informante || "—")} · ${nM}/${KPIS.length} indicadores`;
+    }
+    d.innerHTML = `<div class="top"><div><span class="tipo-pill${campo ? "" : " med"}">${campo ? "CAMPO" : "GERENTES"}</span><b>${esc(e.hotel)} · ${esc(e.area)}</b> · ${fmtDay(e.fecha)}<br>
+      <span style="color:var(--grey)">${sub}${fotos.length ? " · 📷 " + fotos.length : ""}</span></div>
+      <div style="text-align:right"><span class="pill">${fmt(e.score_general)}</span><br><span class="badge ${b.cls}" style="margin-top:4px">${b.label}</span>
+      ${e.synced ? "" : '<br><span class="pill" style="background:#FDF3E0;color:#8A6A1F;margin-top:4px;display:inline-block">Sin sincronizar</span>'}</div></div>
+      ${fotos.length ? `<div class="thumbs">${fotos.map(p => `<img src="${p.src}" alt="">`).join("")}</div>` : ""}
+      <div class="actions"></div>`;
+    d.querySelectorAll(".thumbs img").forEach(im => im.onclick = () => openLightbox(im.src));
+    const a = d.querySelector(".actions");
+    [["✏️ Editar", () => campo ? cLoad(e) : loadIntoForm(e)], ["📝 Word", ev => exportFichasDocx([e], fichaFile(e), ev.currentTarget)],
+     ["📄 PDF", () => exportFichaPDF(e)], ["🗑 Eliminar", () => deleteEntry(e), true]]
+      .forEach(([t, fn, danger]) => { const btn = document.createElement("button"); btn.className = "mini-btn" + (danger ? " danger" : ""); btn.textContent = t; btn.onclick = fn; a.appendChild(btn); });
+    c.appendChild(d);
+  });
+  const pend = entries.filter(x => !x.synced).length;
+  $("retry-wrap").style.display = pend ? "block" : "none";
+  $("retry-count").textContent = `${pend} ficha(s) guardadas solo en este dispositivo.`;
+}
+async function retrySync(){ for (const e of entries.filter(x => !x.synced)) await pushEntry(e); cacheRows = null; await renderHistorial(true); }
+
+// ============================ RESULTADOS ============================
+// Área: promedio de sus fichas en el período · Propiedad: promedio de sus áreas · Corporativo: promedio de propiedades
+let resTipo = "campo";
+const critKey = (p, i) => p + "_" + i;
+function aggArea(rows){
+  const pillars = {}; PILLARS.forEach(p => pillars[p.key] = mean(rows.map(r => r["score_" + p.key])));
+  const kp = {}, crit = {};
+  KPIS.forEach(k => { const v = mean(rows.map(r => r.kpis && r.kpis[k.code] ? r.kpis[k.code].valor : null)); kp[k.code] = {valor:v, estado:kState(k, v)}; });
+  CAMPO_PILLARS.forEach(p => p.items.forEach((it, i) => {
+    const vals = [], obs = [];
+    rows.forEach(r => { const x = (r.respuestas || []).find(y => y.seccion === p.key && y.idx === i);
+      if (x && x.valor && x.valor !== "na") { vals.push(OPTIONS.find(o => o.key === x.valor).val); if (x.comentario && x.valor !== "cumple") obs.push(x.comentario); } });
+    crit[critKey(p.key, i)] = {q:it.q, pillar:p.title, val:mean(vals), obs:[...new Set(obs)]};
+  }));
+  return {fichas:rows.length, score:mean(rows.map(r => r.score_general)), pillars, kpis:kp, crit, rows};
+}
+function aggregate(rows){
+  return HOTELS.map(h => {
+    const hr = rows.filter(r => r.hotel === h.code);
+    const areas = areasOf(h.code).map(a => ({nombre:a, ...aggArea(hr.filter(r => r.area === a))})).filter(a => a.fichas);
+    const pillars = {}; PILLARS.forEach(p => pillars[p.key] = mean(areas.map(a => a.pillars[p.key])));
+    return {hotel:h, areas, score:areas.length ? mean(areas.map(a => a.score)) : null, pillars, fichas:hr.length};
+  });
+}
+const critState = v => v === null || v === undefined ? "na" : Math.round(v) >= 90 ? "cumple" : Math.round(v) >= 50 ? "parcial" : "nocumple";
+const weakCrit = r => Object.values(r.crit).filter(c => c.val !== null && Math.round(c.val) < 90);
+// Resultado por recepción (Front Desk / Club de cada hotel)
+const recepcionesOf = ev => ev.flatMap(a => a.areas.map(r => ({hotel:a.hotel, ...r, julio:JULIO_AREA[a.hotel.code + "|" + r.nombre]})));
+function recepcionesHTML(ev){
+  const list = recepcionesOf(ev);
+  if (!list.length) return "";
+  return `<div class="card"><div class="card-head"><h2>Resumen por recepción</h2><span class="pill">${list.length}</span></div><div class="tscroll"><table class="rtable"><thead><tr><th>Hotel</th><th>Recepción</th><th class="num">Fichas</th><th class="num">Resultado</th><th class="num">Julio</th></tr></thead><tbody>` +
+    list.map(r => `<tr><td>${r.hotel.code}</td><td>${esc(r.nombre)}</td><td class="num">${r.fichas}</td><td class="num" style="font-weight:700;color:${band(r.score).color}">${fmt(r.score)}</td><td class="num">${r.julio !== undefined ? r.julio + "%" : "—"}</td></tr>`).join("") + `</tbody></table></div></div>`;
+}
+// Resultado individual: cada ficha de campo = un agente entrevistado / observado
+const agentesOf = a => a.areas.flatMap(r => r.rows.map(e => ({area:r.nombre, ...e}))).sort((x,y) => x.area.localeCompare(y.area) || (y.score_general ?? -1) - (x.score_general ?? -1));
+function agentesHTML(a){
+  const list = agentesOf(a);
+  return `<table class="rtable"><thead><tr><th>Recepción</th><th>Agente</th><th>Perfil</th><th class="num">Fecha</th><th class="num">Resultado</th></tr></thead><tbody>` +
+    list.map(e => `<tr><td>${esc(e.area)}</td><td>${esc(e.nombre_entrevistado || "—")}</td><td style="font-size:.72rem">${esc(e.perfil_entrevistado || "—")}</td><td class="num">${fmtDay(e.fecha)}</td><td class="num" style="font-weight:700;color:${band(e.score_general).color}">${fmt(e.score_general)}</td></tr>`).join("") + `</tbody></table>`;
+}
+function monthsIn(rows){ return [...new Set(rows.map(r => r.mes).filter(Boolean))].sort(); }
+let lastAgg = null, lastPeriod = "", lastRows = [], lastTipo = "campo";
+async function renderResultados(force){
+  const desde = $("res-desde").value, hasta = $("res-hasta").value;
+  const {rows: all, source} = await fetchAll(force);
+  const rows = all.filter(e => tipoOf(e) === resTipo && (!desde || e.mes >= desde) && (!hasta || e.mes <= hasta));
+  const agg = aggregate(rows);
+  const campo = resTipo === "campo";
+  lastAgg = agg; lastRows = rows; lastTipo = resTipo;
+  lastPeriod = (desde || hasta) ? `${desde ? fmtMes(desde) : "inicio"} – ${hasta ? fmtMes(hasta) : "hoy"}` : "Todos los meses";
+  $("res-source").textContent = `${rows.length} ficha(s) de ${campo ? "validación en campo" : "medición de gerentes"} desde ${source}. Período: ${lastPeriod}.`;
+  const c = $("res-container"); c.innerHTML = "";
+  const ev = agg.filter(a => a.score !== null);
+  const corp = mean(ev.map(a => a.score)), cb = band(corp);
+  c.innerHTML = `<div class="corp"><div><div style="font-size:.78rem;color:var(--gold-light);text-transform:uppercase;letter-spacing:.04em">${campo ? "Validación en campo" : "Medición gerentes"} · Promedio corporativo</div>
+    <div style="font-size:.82rem;color:rgba(255,255,255,.75)">${ev.length} de ${HOTELS.length} propiedades · validación julio 2026: 89%</div></div>
+    <div style="text-align:right"><div class="big">${fmt(corp)}</div><span class="badge ${cb.cls}">${cb.label}</span></div></div>`;
+  const comp = Object.entries(COMPLEJOS).map(([n, hs]) => ({n, hs, s:mean(ev.filter(a => hs.includes(a.hotel.code)).map(a => a.score))}));
+  const meses = monthsIn(rows);
+  let evo = "";
+  if (meses.length > 1) {
+    evo = `<div class="card"><div class="card-head"><h2>Evolución mensual</h2></div><div class="tscroll"><table class="rtable"><thead><tr><th>Propiedad</th>${meses.map(m => `<th class="num">${esc(fmtMes(m).slice(0,3))} ${m.slice(2,4)}</th>`).join("")}</tr></thead><tbody>` +
+      HOTELS.map(h => `<tr><td>${h.code}</td>${meses.map(m => { const a = aggregate(rows.filter(r => r.mes === m)).find(x => x.hotel.code === h.code); return `<td class="num" style="font-weight:700;color:${band(a.score).color}">${fmt(a.score)}</td>`; }).join("")}</tr>`).join("") +
+      `</tbody></table></div></div>`;
+  }
+  c.insertAdjacentHTML("beforeend", `<div class="card"><div class="card-head"><h2>Resumen por complejo</h2></div><div class="tscroll"><table class="rtable"><thead><tr><th>Complejo</th><th class="num">Resultado</th><th>Estado</th></tr></thead><tbody>` +
+    comp.map(x => `<tr><td>${x.n}<br><span style="font-size:.7rem;color:var(--grey)">${x.hs.map(hc => { const a = ev.find(z => z.hotel.code === hc); return hc + " " + (a ? fmt(a.score) : "—"); }).join(" · ")}</span></td><td class="num" style="font-weight:700;color:${band(x.s).color}">${fmt(x.s)}</td><td>${band(x.s).label}</td></tr>`).join("") + `</tbody></table></div></div>` + recepcionesHTML(ev) + evo);
+  agg.forEach(a => {
+    if (a.score === null) { c.insertAdjacentHTML("beforeend", `<div class="pending-hotel"><b>${esc(hotelLabel(a.hotel.code))}</b> — sin fichas en el período</div>`); return; }
+    const b = band(a.score), h = a.hotel;
+    const jul = h.julio === null ? "sin validación en julio" : `Julio ${h.julio}% (${a.score - h.julio >= 0 ? "+" : ""}${(a.score - h.julio).toFixed(1)} pp)`;
+    let detalle;
+    if (campo) {
+      const weak = a.areas.flatMap(r => weakCrit(r).map(x => ({area:r.nombre, ...x})));
+      detalle = weak.length ? `<table class="rtable"><thead><tr><th>Recepción</th><th>Criterio por debajo del estándar</th><th class="num">Prom.</th></tr></thead><tbody>` +
+        weak.map(x => `<tr><td>${esc(x.area)}</td><td>${esc(x.q)}${x.obs.length ? `<br><span style="color:var(--grey);font-size:.72rem">${esc(x.obs.slice(0,2).join(" | "))}</span>` : ""}</td><td class="num cell-${critState(x.val)}">${fmt(x.val)}</td></tr>`).join("") + `</tbody></table>`
+        : `<p class="hint" style="padding:0 10px 10px">Todos los criterios evaluados en Cumple.</p>`;
+    } else {
+      detalle = `<table class="rtable kpitable"><thead><tr><th>Indicador</th>${a.areas.map(r => `<th class="num">${esc(r.nombre === "Front Desk" ? "FD" : "Club")}</th>`).join("")}<th>Meta</th></tr></thead><tbody>
+      ${KPIS.map(k => `<tr><td><span style="color:var(--gold);font-weight:700">${k.code}</span> ${esc(k.name)}</td>${a.areas.map(r => { const x = r.kpis[k.code]; return `<td class="num cell-${x.estado}">${fmtK(k, x.valor)}</td>`; }).join("")}<td style="font-size:.7rem;color:var(--grey)">${esc(metaText(k))}</td></tr>`).join("")}
+      </tbody></table>`;
+    }
+    const blk = document.createElement("div"); blk.className = "hotel-block";
+    blk.innerHTML = `<div class="hotel-head"><div><div class="name">${esc(hotelLabel(h.code))}</div>
+      <div class="sub">${a.areas.length} recepción(es) · ${a.fichas} ficha(s) · ${h.complejo === "Independientes" ? "Independiente" : "Complejo " + h.complejo} · ${jul}</div></div>
+      <div><div class="pct">${fmt(a.score)}</div><span class="badge ${b.cls}">${b.label}</span></div></div>
+      <div class="tscroll"><table class="rtable"><thead><tr><th>Recepción</th><th class="num">Fichas</th>${PILLARS.map(p => `<th class="num">${p.short}</th>`).join("")}<th class="num">Total</th><th class="num">Julio</th></tr></thead><tbody>
+      ${a.areas.map(r => `<tr><td>${esc(r.nombre)}</td><td class="num">${r.fichas}</td>${PILLARS.map(p => `<td class="num">${fmt(r.pillars[p.key])}</td>`).join("")}<td class="num" style="font-weight:700;color:${band(r.score).color}">${fmt(r.score)}</td><td class="num">${JULIO_AREA[h.code + "|" + r.nombre] !== undefined ? JULIO_AREA[h.code + "|" + r.nombre] + "%" : "—"}</td></tr>`).join("")}
+      <tr style="background:var(--beige);font-weight:700"><td>Promedio propiedad</td><td class="num">${a.fichas}</td>${PILLARS.map(p => `<td class="num">${fmt(a.pillars[p.key])}</td>`).join("")}<td class="num" style="color:${b.color}">${fmt(a.score)}</td><td class="num">${h.julio === null ? "—" : h.julio + "%"}</td></tr>
+      </tbody></table>${campo ? agentesHTML(a) : ""}${detalle}</div>`;
+    c.appendChild(blk);
+  });
+  c.insertAdjacentHTML("beforeend", `<p class="hint">P1 Ejecución Operativa · P2 Funcionalidad · P3 Infraestructura · P4 Adopción. ${campo
+    ? "Agente = su ficha · Recepción = promedio de sus agentes · Hotel = promedio de sus recepciones · Complejo = promedio de sus hoteles. Criterio por debajo del estándar = promedio de la recepción menor a 90%. Julio = validación de julio 2026 con los mismos criterios."
+    : "Verde = Cumple · Amarillo = Parcial · Rojo = No cumple. Julio = validación en campo de julio 2026 (referencia; metodología distinta)."}</p>`);
+}
+
+// ============================ ROADMAP ============================
+const RM_DEFAULT = [
+  [1,"Check-in Grupos","Habilitar el proceso completo de Check-in Digital para grupos a través del código QR.","AD-01 (dejar de excluir grupos)","Cuadro de seguimiento","En desarrollo"],
+  [2,"Check-in VIP referidos USO CASA","Actualmente prácticamente ninguno completa tarjeta de registro.","AD-01 (dejar de excluir VIP)","Cuadro de seguimiento","En desarrollo"],
+  [3,"Check-in Socios UVC","Pendiente en las recepciones que por el flujo aún no pueden atender digital; en los Clubs se mantiene digital.","AD-01 (dejar de excluir UVC)","Cuadro de seguimiento","Stand by"],
+  [4,"Registro digital de acompañante que llega en otro horario","El acompañante que llega más tarde debe registrarse con la información del primer pax o tomar tarjeta manual.","AD-02","Cuadro de seguimiento","En desarrollo"],
+  [5,"Prolongaciones de estadía","Gestión digital de extensiones o múltiples reservas sin generar un nuevo Check-in. Resuelto: la TR de la prolongación se guarda en SharePoint en la carpeta con la fecha de la prolongación.","AD-02","Cuadro de seguimiento · correo Glenys 06/10/2026","Entregado"],
+  [6,"Opción NINGUNA en el campo de alergias","Que el huésped pueda seleccionar la opción deseada.","—","Cuadro de seguimiento","En desarrollo"],
+  [7,"Código QR","Implementar y estandarizar el Código QR para iniciar el Check-in Digital (inglés y español para comenzar).","FS-05","Cuadro de seguimiento","En desarrollo"],
+  [8,"Redirección QR","Garantizar que el Código QR dirija correctamente al flujo de Check-in Digital.","FS-05","Cuadro de seguimiento","En desarrollo"],
+  [9,"Multilenguaje sin pérdida de información","Mantener la información registrada cuando el huésped cambie el idioma durante el proceso.","FS-01","Cuadro de seguimiento","En desarrollo"],
+  [10,"Integración PMS / INSiST","Transferencia automática de toda la información del huésped; hoy país, ciudad y zip code no pasan.","FS-03 (empezar a medir)","Cuadro de seguimiento","En desarrollo"],
+  [11,"Automatización","Reducir la dependencia de procesos manuales con la automatización completa del flujo.","AD-02","Cuadro de seguimiento","En desarrollo"],
+  [12,"Actualización por cambio de habitación","El cambio de habitación no genera el registro y actualización correspondiente.","FS-04","Validación julio (DROPC, BREPC)","Por definir"],
+  [13,"Generación y almacenamiento del PDF","Corregir fallos ocasionales en la generación del PDF y su archivo en SharePoint.","FS-02","Validación julio (BREPC)","Por definir"],
+  [14,"Recuperación de registros digitales","Consulta histórica de llegadas y salidas para recuperar y completar tarjetas no guardadas.","FS-01 / AD-02","Áreas de oportunidad #8","Por definir"],
+  [15,"No Show / Go Show","Definir la gestión de estas excepciones operativas en el flujo digital.","AD-02","Áreas de oportunidad #5","Por definir"],
+  [16,"Campo de celebraciones con fecha","Al indicar una celebración, el huésped registra la fecha (o la elige de un menú desplegable, como las alergias), para que el Flag en INSiST no tome la fecha de llegada y Ama de Llaves solo tenga que agendar.","FS-03","Correo Glenys 06/10/2026 (punto 4)","Por definir"],
+].map(([id, funcionalidad, descripcion, indicador, origen, estado]) => ({id, funcionalidad, descripcion, indicador, origen, estado, fecha_compromiso:null, fecha_entrega:null}));
+const RM_ESTADOS = ["Por definir","En desarrollo","En pruebas","Entregado","Stand by"];
+let roadmap = lsGet(LS_ROADMAP, null) || RM_DEFAULT.map(x => ({...x}));
+RM_DEFAULT.forEach(x => { if (!roadmap.some(r => r.id === x.id)) roadmap.push({...x}); });
+let rmSynced = false;
+async function loadRoadmap(){
+  if (!sb) return;
+  const { data, error } = await withTimeout(sb.from(T_ROADMAP).select("*").order("id"), 8000);
+  if (error) { console.warn("roadmap:", error.message); return; }
+  if (!data.length) {
+    const { error: e2 } = await sb.from(T_ROADMAP).upsert(roadmap.map(rmRow));
+    if (e2) { console.warn(e2.message); return; }
+  } else {
+    roadmap = data;
+    const faltan = RM_DEFAULT.filter(x => !data.some(d => d.id === x.id));
+    if (faltan.length) {
+      const { error: e3 } = await sb.from(T_ROADMAP).upsert(faltan.map(rmRow));
+      if (!e3) roadmap = roadmap.concat(faltan.map(x => ({...x}))).sort((a,b) => a.id - b.id);
+    }
+  }
+  rmSynced = true; lsSet(LS_ROADMAP, roadmap);
+}
+const rmRow = x => ({id:x.id, funcionalidad:x.funcionalidad, descripcion:x.descripcion, indicador:x.indicador, origen:x.origen, estado:x.estado,
+  fecha_compromiso:x.fecha_compromiso || null, fecha_entrega:x.fecha_entrega || null, updated_at:new Date().toISOString()});
+async function saveRoadmapItem(x){
+  lsSet(LS_ROADMAP, roadmap);
+  if (!sb) return;
+  const { error } = await sb.from(T_ROADMAP).upsert(rmRow(x));
+  rmSynced = !error; $("rm-sync").textContent = error ? "Solo en este dispositivo" : "Sincronizado";
+}
+function rmProgress(){
+  const act = roadmap.filter(x => x.estado !== "Stand by");
+  const ent = roadmap.filter(x => x.estado === "Entregado").length, pru = roadmap.filter(x => x.estado === "En pruebas").length;
+  return {act:act.length, ent, pru, pct:act.length ? (ent + .5 * pru) / act.length * 100 : 0};
+}
+function renderRoadmap(){
+  const p = rmProgress();
+  $("rm-summary").innerHTML = `<div style="flex:1"><div style="font-size:.78rem;color:var(--gold-light);text-transform:uppercase;letter-spacing:.04em">Avance del roadmap · Desarrollo IT</div>
+    <div style="font-size:.82rem;color:rgba(255,255,255,.75)">${p.ent} entregada(s) · ${p.pru} en pruebas · ${p.act} activas (sin Stand by)</div>
+    <div class="progress"><div style="width:${p.pct}%"></div></div></div><div class="big">${Math.round(p.pct)}%</div>`;
+  $("rm-sync").textContent = rmSynced ? "Sincronizado" : (sb ? "Conectando…" : "Solo en este dispositivo");
+  const list = $("rm-list"); list.innerHTML = "";
+  roadmap.forEach(x => {
+    const d = document.createElement("div"); d.className = "rm-item";
+    d.innerHTML = `<div class="rm-top"><b>${x.id}. ${esc(x.funcionalidad)}</b><span class="rm-tag">${esc(x.indicador || "")}</span></div>
+      <p>${esc(x.descripcion)} <i>· ${esc(x.origen || "")}</i></p>
+      <div class="rm-grid">
+        <div><label>Estado</label><select class="rm-estado">${RM_ESTADOS.map(s => `<option${s === x.estado ? " selected" : ""}>${s}</option>`).join("")}</select></div>
+        <div><label>Fecha compromiso</label><input type="date" class="rm-fc" value="${x.fecha_compromiso || ""}"></div>
+        <div><label>Fecha de entrega</label><input type="date" class="rm-fe" value="${x.fecha_entrega || ""}"></div>
+      </div>`;
+    d.querySelector(".rm-estado").onchange = ev => { x.estado = ev.target.value; saveRoadmapItem(x); renderRoadmap(); };
+    d.querySelector(".rm-fc").onchange = ev => { x.fecha_compromiso = ev.target.value || null; saveRoadmapItem(x); };
+    d.querySelector(".rm-fe").onchange = ev => { x.fecha_entrega = ev.target.value || null; saveRoadmapItem(x); };
+    list.appendChild(d);
+  });
+}
+
+// ============================ PDF (impresión del navegador) ============================
+const DOC_CSS = `body{font-family:Calibri,Arial,sans-serif;color:#222;font-size:10.5pt;}
+h1{color:#1F3864;font-size:17pt;margin:4px 0;} h2{color:#1F3864;font-size:12.5pt;border-bottom:2px solid #B08D3E;padding-bottom:3px;margin-top:18px;}
+h3{color:#1F3864;font-size:11.5pt;margin:22px 0 4px;}
+.eyebrow{color:#B08D3E;font-size:8.5pt;text-transform:uppercase;letter-spacing:.5px;margin:0;}
+table{border-collapse:collapse;width:100%;margin:6px 0;} th{background:#1F3864;color:#fff;padding:5px 7px;text-align:left;font-size:9.5pt;}
+td{border:1px solid #D9D3CC;padding:5px 7px;vertical-align:top;font-size:9.5pt;} .num{text-align:right;}
+.meta td{border:none;padding:2px 6px 2px 0;} .tot td{background:#EDE9E6;font-weight:bold;}
+.small{color:#6B7280;font-size:8.5pt;} .pgbrk{page-break-before:always;}
+.fotos{display:flex;flex-wrap:wrap;gap:8px;} .fotos figure{margin:0;width:48%;} .fotos img{width:100%;max-height:260px;object-fit:contain;border:1px solid #D9D3CC;}
+.fotos figcaption{font-size:8.5pt;color:#6B7280;font-style:italic;text-align:center;}
+.cumple{background:#E4F3E8;} .parcial{background:#FBF1D6;} .nocumple{background:#FBE8E7;}`;
+function docHeader(title, sub){
+  return `<table class="meta" style="width:100%"><tr><td style="width:64px"><img src="${LOGO}" width="56" height="56"></td>
+    <td><p class="eyebrow">Grupo Martinón · Dirección Corporativa de Implementación y Procesos</p><h1>${esc(title)}</h1><div class="small">${esc(sub)}</div></td></tr></table>`;
+}
+function fotosHTML(e){
+  const f = (e.fotos || []).filter(p => p.src);
+  return f.length ? `<h2>Evidencia fotográfica</h2><div class="fotos">${f.map(p => `<figure><img src="${p.src}">${p.desc ? `<figcaption>${esc(p.desc)}</figcaption>` : ""}</figure>`).join("")}</div>` : "";
+}
+const datoTxt = (e, k) => {
+  const keys = k.code === "AD-01" ? ["tot","exc","dig"] : k.code === "AD-02" ? ["man","tot","exc"] : ["FS-01","FS-02","FS-03"].includes(k.code) ? [...k.inputs, "dig"] : k.inputs;
+  return keys.map(x => `${INPUTS[x].label.split(" (")[0]}: ${ok((e.datos||{})[x]) ? e.datos[x] : "—"}`).join(" · ");
+};
+function campoFichaHTML(e, withHeader = true){
+  const b = band(e.score_general);
+  let h = withHeader ? docHeader("Validación Check-in Digital — Ficha de campo", `${hotelLabel(e.hotel)} · ${e.area}`) : `<h3>${esc(hotelLabel(e.hotel))} · ${esc(e.area)} · ${fmtDay(e.fecha)}</h3>`;
+  h += `<table class="meta"><tr><td><b>Fecha:</b> ${fmtDay(e.fecha)}</td><td><b>Evaluador:</b> ${esc(e.evaluador || "—")}</td></tr>
+    <tr><td><b>Entrevistado:</b> ${esc(e.nombre_entrevistado || "—")}</td><td><b>Perfil:</b> ${esc(e.perfil_entrevistado || "—")}</td></tr></table>`;
+  h += `<h2>Resultado</h2><table><tr><th>Pilar</th><th class="num">Resultado</th></tr>` +
+    CAMPO_PILLARS.map(p => `<tr><td>${esc(p.title)}</td><td class="num">${fmt(e["score_" + p.key])}</td></tr>`).join("") +
+    `<tr class="tot"><td>Resultado de la ficha</td><td class="num" style="color:${b.color}">${fmt(e.score_general)} · ${b.label}</td></tr></table>`;
+  if (JULIO_AREA[e.hotel + "|" + e.area]) h += `<p class="small">Validación de julio 2026 para esta área: ${JULIO_AREA[e.hotel + "|" + e.area]}%.</p>`;
+  let n = 0;
+  CAMPO_PILLARS.forEach(p => {
+    h += `<h2>${esc(p.title)}</h2><table><tr><th style="width:5%">#</th><th style="width:47%">Criterio</th><th style="width:14%">Calificación</th><th>Observación</th></tr>`;
+    (e.respuestas || []).filter(r => r.seccion === p.key).forEach(r => {
+      n++;
+      h += `<tr><td>${n}</td><td>${esc(r.pregunta)}${r.dev ? ' <span class="small">(en desarrollo)</span>' : ""}</td><td class="${r.valor}" style="color:#${VAL_COLOR[r.valor] || "6B7280"};font-weight:bold">${VAL_LABEL[r.valor] || "Sin calificar"}</td><td>${esc(r.comentario)}</td></tr>`;
+    });
+    h += `</table>`;
+  });
+  h += `<h2>Hallazgos clave</h2><p>${esc(e.hallazgos || "—").replace(/\n/g, "<br>")}</p>`;
+  h += `<h2>Plan de acción propuesto</h2><p>${esc(e.plan_accion || "—").replace(/\n/g, "<br>")}</p>`;
+  return h + fotosHTML(e);
+}
+function fichaHTML(e, withHeader = true){
+  if (tipoOf(e) === "campo") return campoFichaHTML(e, withHeader);
+  const b = band(e.score_general);
+  let h = withHeader ? docHeader("Medición Check-in Digital — Ficha mensual", `${hotelLabel(e.hotel)} · ${e.area} · ${fmtMes(e.mes)}`) : `<h3>${esc(hotelLabel(e.hotel))} · ${esc(e.area)} · ${esc(fmtMes(e.mes))}</h3>`;
+  h += `<table class="meta"><tr><td><b>Mes medido:</b> ${esc(fmtMes(e.mes))}</td><td><b>Fecha de captura:</b> ${fmtDay(e.fecha)}</td></tr>
+    <tr><td><b>Evaluador:</b> ${esc(e.evaluador || "—")}</td><td><b>Informante:</b> ${esc(e.informante || "—")} (${esc(e.cargo_informante || "—")})</td></tr></table>`;
+  h += `<h2>Resultado</h2><table><tr><th>Pilar</th><th class="num">Resultado</th></tr>` +
+    PILLARS.map(p => `<tr><td>${esc(p.title)}</td><td class="num">${fmt(e["score_" + p.key])}</td></tr>`).join("") +
+    `<tr class="tot"><td>Resultado del área</td><td class="num" style="color:${b.color}">${fmt(e.score_general)} · ${b.label}</td></tr></table>`;
+  if (JULIO_AREA[e.hotel + "|" + e.area]) h += `<p class="small">Referencia validación julio 2026 para esta área: ${JULIO_AREA[e.hotel + "|" + e.area]}%.</p>`;
+  PILLARS.forEach(p => {
+    h += `<h2>${esc(p.title)}</h2><table><tr><th style="width:22%">Indicador</th><th style="width:28%">Datos capturados</th><th class="num" style="width:10%">Valor</th><th style="width:14%">Meta</th><th style="width:10%">Estado</th><th>Comentario</th></tr>`;
+    KPIS.filter(k => k.pillar === p.key).forEach(k => {
+      const r = (e.kpis || {})[k.code] || {valor:null, estado:"na"};
+      h += `<tr><td><b>${k.code}</b> ${esc(k.name)}</td><td class="small">${esc(datoTxt(e, k))}</td><td class="num">${fmtK(k, r.valor)}</td><td class="small">${esc(metaText(k))}</td><td class="${r.estado}" style="color:${ST_COLOR[r.estado]};font-weight:bold">${ST_LABEL[r.estado]}</td><td>${esc((e.comentarios||{})[k.code] || "")}</td></tr>`;
+    });
+    h += `</table>`;
+  });
+  h += `<h2>Hallazgos clave</h2><p>${esc(e.hallazgos || "—").replace(/\n/g, "<br>")}</p>`;
+  h += `<h2>Plan de acción propuesto</h2><p>${esc(e.plan_accion || "—").replace(/\n/g, "<br>")}</p>`;
+  return h + fotosHTML(e);
+}
+const METOD_CAMPO = "Metodología: Cumple 100% · Parcial 50% · No cumple 0% · N/A se excluye. 90–100% Implementación Consolidada · 71–89% Requiere Seguimiento · 0–70% Requiere Intervención Prioritaria.";
+const metodOf = t => t === "campo" ? METOD_CAMPO : METOD;
+const METOD = "Metodología: cada indicador se clasifica según su meta: Cumple 100 · Parcial 50 · No cumple 0 · N/A se excluye. 90–100% Implementación Consolidada · 71–89% Requiere Seguimiento · 0–70% Requiere Intervención Prioritaria.";
+const issuesOf = a => a.areas.flatMap(r => KPIS.filter(k => ["parcial","nocumple"].includes(r.kpis[k.code].estado)).map(k => ({area:r.nombre, k, ...r.kpis[k.code],
+  com:[...new Set(r.rows.map(e => (e.comentarios||{})[k.code]).filter(Boolean))].join(" | ")})));
+const hallazgosOf = a => a.areas.flatMap(r => r.rows.filter(e => e.hallazgos || e.plan_accion).map(e => ({area:r.nombre, mes:e.mes, ...e})));
+const fotosOf = a => a.areas.flatMap(r => r.rows.flatMap(e => (e.fotos||[]).filter(p => p.src).map(p => ({area:r.nombre, ...p}))));
+function roadmapHTML(){
+  const p = rmProgress();
+  return `<h2>Roadmap de desarrollo — avance ${Math.round(p.pct)}%</h2><table><tr><th>#</th><th>Funcionalidad</th><th>Estado</th><th>Compromiso</th><th>Entrega</th><th>Indicador</th></tr>` +
+    roadmap.map(x => `<tr><td>${x.id}</td><td>${esc(x.funcionalidad)}</td><td>${esc(x.estado)}</td><td>${fmtDay(x.fecha_compromiso) || "—"}</td><td>${fmtDay(x.fecha_entrega) || "—"}</td><td>${esc(x.indicador || "")}</td></tr>`).join("") + `</table>`;
+}
+function consolidadoHTML(){
+  const agg = lastAgg || [], ev = agg.filter(a => a.score !== null);
+  const corp = mean(ev.map(a => a.score)), cb = band(corp);
+  const campo = lastTipo === "campo";
+  let h = docHeader(campo ? "Validación en campo Check-in Digital — Resultado por propiedad" : "Medición Check-in Digital (gerentes) — Resultado por propiedad", `Período: ${lastPeriod} · Generado ${fmtDay(today())}`);
+  h += `<h2>Resumen corporativo</h2><table><tr><th>Propiedad</th><th class="num">Recepciones</th><th class="num">Fichas</th>${PILLARS.map(p=>`<th class="num">${p.short}</th>`).join("")}<th class="num">Resultado</th><th class="num">Julio</th><th>Estado</th></tr>` +
+    ev.map(a => { const b = band(a.score); return `<tr><td>${esc(hotelLabel(a.hotel.code))}</td><td class="num">${a.areas.length}</td><td class="num">${a.fichas}</td>${PILLARS.map(p=>`<td class="num">${fmt(a.pillars[p.key])}</td>`).join("")}<td class="num" style="font-weight:bold;color:${b.color}">${fmt(a.score)}</td><td class="num">${a.hotel.julio === null ? "—" : a.hotel.julio + "%"}</td><td>${b.label}</td></tr>`; }).join("") +
+    `<tr class="tot"><td>Promedio corporativo</td><td></td><td></td>${PILLARS.map(p=>`<td class="num">${fmt(mean(ev.map(a=>a.pillars[p.key])))}</td>`).join("")}<td class="num" style="color:${cb.color}">${fmt(corp)}</td><td class="num">89%</td><td>${cb.label}</td></tr></table>`;
+  h += `<h2>Resultado por complejo</h2><table><tr><th>Complejo</th><th>Propiedades</th><th class="num">Resultado</th><th>Estado</th></tr>` +
+    Object.entries(COMPLEJOS).map(([n, hs]) => { const v = mean(ev.filter(a => hs.includes(a.hotel.code)).map(a => a.score)), bb = band(v);
+      return `<tr><td>${n}</td><td>${hs.map(hc => { const a = ev.find(z => z.hotel.code === hc); return hc + " " + (a ? fmt(a.score) : "—"); }).join(" · ")}</td><td class="num" style="font-weight:bold;color:${bb.color}">${fmt(v)}</td><td>${bb.label}</td></tr>`; }).join("") + `</table>`;
+  const rl = recepcionesOf(ev);
+  if (rl.length) h += `<h2>Resultado por recepción</h2><table><tr><th>Hotel</th><th>Recepción</th><th class="num">Fichas</th><th class="num">Resultado</th><th class="num">Julio</th><th>Estado</th></tr>` +
+    rl.map(r => `<tr><td>${esc(hotelLabel(r.hotel.code))}</td><td>${esc(r.nombre)}</td><td class="num">${r.fichas}</td><td class="num" style="font-weight:bold;color:${band(r.score).color}">${fmt(r.score)}</td><td class="num">${r.julio !== undefined ? r.julio + "%" : "—"}</td><td>${band(r.score).label}</td></tr>`).join("") + `</table>`;
+  ev.forEach(a => {
+    const b = band(a.score);
+    h += `<h2>${esc(hotelLabel(a.hotel.code))} — ${fmt(a.score)} · ${b.label}</h2>`;
+    if (campo) {
+      h += `<table><tr><th>Recepción</th><th class="num">Fichas</th>${PILLARS.map(p=>`<th class="num">${p.short}</th>`).join("")}<th class="num">Resultado</th><th class="num">Julio</th></tr>` +
+        a.areas.map(r => `<tr><td>${esc(r.nombre)}</td><td class="num">${r.fichas}</td>${PILLARS.map(p=>`<td class="num">${fmt(r.pillars[p.key])}</td>`).join("")}<td class="num" style="font-weight:bold;color:${band(r.score).color}">${fmt(r.score)}</td><td class="num">${JULIO_AREA[a.hotel.code + "|" + r.nombre] !== undefined ? JULIO_AREA[a.hotel.code + "|" + r.nombre] + "%" : "—"}</td></tr>`).join("") + `</table>`;
+      h += `<p><b>Resultado por agente</b></p><table><tr><th>Recepción</th><th>Agente</th><th>Perfil</th><th>Fecha</th><th class="num">Resultado</th></tr>` +
+        agentesOf(a).map(e => `<tr><td>${esc(e.area)}</td><td>${esc(e.nombre_entrevistado || "—")}</td><td>${esc(e.perfil_entrevistado || "—")}</td><td>${fmtDay(e.fecha)}</td><td class="num" style="font-weight:bold;color:${band(e.score_general).color}">${fmt(e.score_general)}</td></tr>`).join("") + `</table>`;
+      const weak = a.areas.flatMap(r => weakCrit(r).map(x => ({area:r.nombre, ...x})));
+      if (weak.length) h += `<p><b>Criterios por debajo del estándar (promedio &lt; 90%)</b></p><table><tr><th>Recepción</th><th>Criterio</th><th class="num">Prom.</th><th>Observaciones</th></tr>` +
+        weak.map(x => `<tr><td>${esc(x.area)}</td><td>${esc(x.q)}</td><td class="num ${critState(x.val)}">${fmt(x.val)}</td><td>${esc(x.obs.join(" | "))}</td></tr>`).join("") + `</table>`;
+    } else h += `
+      <table><tr><th>Indicador</th>${a.areas.map(r => `<th class="num">${esc(r.nombre)}</th>`).join("")}<th>Meta</th></tr>` +
+      KPIS.map(k => `<tr><td><b>${k.code}</b> ${esc(k.name)}</td>${a.areas.map(r => `<td class="num ${r.kpis[k.code].estado}">${fmtK(k, r.kpis[k.code].valor)}</td>`).join("")}<td class="small">${esc(metaText(k))}</td></tr>`).join("") +
+      `<tr class="tot"><td>Resultado del área</td>${a.areas.map(r => `<td class="num" style="color:${band(r.score).color}">${fmt(r.score)}</td>`).join("")}<td></td></tr></table>`;
+    const hall = hallazgosOf(a);
+    if (hall.length) h += `<p><b>Hallazgos y plan de acción registrados</b></p><table><tr><th>Área</th><th>${campo ? "Fecha" : "Mes"}</th><th>Hallazgos</th><th>Plan de acción</th></tr>` +
+      hall.map(e => `<tr><td>${esc(e.area)}</td><td>${campo ? fmtDay(e.fecha) : esc(fmtMes(e.mes))}</td><td>${esc(e.hallazgos).replace(/\n/g,"<br>")}</td><td>${esc(e.plan_accion).replace(/\n/g,"<br>")}</td></tr>`).join("") + `</table>`;
+    const fot = fotosOf(a);
+    if (fot.length) h += `<p><b>Evidencia fotográfica</b></p><div class="fotos">${fot.map(p => `<figure><img src="${p.src}"><figcaption>${esc(p.area)}${p.desc ? " · " + esc(p.desc) : ""}</figcaption></figure>`).join("")}</div>`;
+  });
+  h += roadmapHTML();
+  return h + `<p class="small">P1 Ejecución Operativa · P2 Funcionalidad del Sistema · P3 Infraestructura y Equipamiento · P4 Adopción Operativa. Área = promedio de sus fichas del período; propiedad = promedio de sus áreas; corporativo = promedio de propiedades evaluadas. Julio = validación en campo de julio 2026${campo ? " (mismos criterios)" : " (referencia)"}. ${metodOf(lastTipo)}</p>`;
+}
+function openPDF(inner, title){
+  const w = window.open("", "_blank");
+  if (!w) { alert("Permite ventanas emergentes para descargar el PDF."); return; }
+  w.document.write(`<!DOCTYPE html><html><head><meta charset="utf-8"><title>${esc(title)}</title><style>${DOC_CSS}@page{size:A4;margin:14mm;}</style></head><body>${inner}</body></html>`);
+  w.document.close(); setTimeout(() => w.print(), 900);
+}
+const slug = s => String(s).normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/[^A-Za-z0-9]+/g,"_");
+const exportFichaPDF = e => openPDF(fichaHTML(e) + `<p class="small">${metodOf(tipoOf(e))}</p>`, `CheckIn ${e.hotel} ${e.area} ${e.fecha}`);
+function historialPDF(list){
+  let h = docHeader("Check-in Digital — Historial de fichas", `${histDescription()} · ${list.length} ficha(s)`);
+  h += `<table><tr><th>Tipo</th><th>Fecha</th><th>Hotel</th><th>Área</th><th>Persona</th><th class="num">Resultado</th></tr>` +
+    list.map(e => `<tr><td>${tipoOf(e) === "campo" ? "Campo" : "Gerentes · " + esc(fmtMes(e.mes))}</td><td>${fmtDay(e.fecha)}</td><td>${esc(e.hotel)}</td><td>${esc(e.area)}</td><td>${esc((tipoOf(e) === "campo" ? e.nombre_entrevistado : e.informante) || "—")}</td><td class="num" style="font-weight:bold;color:${band(e.score_general).color}">${fmt(e.score_general)}</td></tr>`).join("") + `</table>`;
+  list.forEach(e => { h += `<div class="pgbrk"></div>` + fichaHTML(e, false); });
+  return h + `<p class="small">${METOD_CAMPO}</p><p class="small">${METOD}</p>`;
+}
+
+// ============================ WORD (.docx editable) ============================
+const NAVY = "1F3864", GOLD = "B08D3E", BEIGE = "EDE9E6", FONT = "Calibri";
+const ST_FILL = {cumple:"E4F3E8", parcial:"FBF1D6", nocumple:"FBE8E7"};
+const hex = c => (c || "").replace("#", "");
+function D(){ if (!window.docx) throw new Error("Librería Word no cargada (revisa la conexión)."); return window.docx; }
+const T = (text, o = {}) => new (D().TextRun)({text:String(text ?? ""), font:FONT, size:o.size || 19, bold:!!o.bold, italics:!!o.italics, color:o.color});
+function P(runs, o = {}){
+  const d = D();
+  return new d.Paragraph({children:Array.isArray(runs) ? runs : [runs], alignment:o.align, spacing:{before:o.before || 0, after:o.after ?? 80}, keepNext:o.keepNext,
+    border:o.line ? {bottom:{style:d.BorderStyle.SINGLE, size:10, color:GOLD, space:3}} : undefined, pageBreakBefore:o.pageBreak});
+}
+function multiline(text, o = {}){ return String(text || "—").split("\n").map(l => P(T(l, o), {after:40})); }
+function cell(content, width, o = {}){
+  const d = D(); const nb = {style:d.BorderStyle.NONE, size:0, color:"FFFFFF"}; const bd = {style:d.BorderStyle.SINGLE, size:4, color:"D9D3CC"};
+  return new d.TableCell({children:Array.isArray(content) ? content : [content], width:{size:width, type:d.WidthType.DXA},
+    shading:o.fill ? {fill:o.fill, type:d.ShadingType.CLEAR, color:"auto"} : undefined, verticalAlign:d.VerticalAlign.CENTER,
+    margins:{top:50, bottom:50, left:90, right:90},
+    borders:o.noBorders ? {top:nb, bottom:nb, left:nb, right:nb} : {top:bd, bottom:bd, left:bd, right:bd}});
+}
+function table(widths, head, rows){
+  const d = D(), trs = [];
+  if (head) trs.push(new d.TableRow({tableHeader:true, children:head.map((h,k) => cell(P(T(h, {bold:true, color:"FFFFFF", size:16}), {after:0}), widths[k], {fill:NAVY}))}));
+  rows.forEach(r => trs.push(new d.TableRow({cantSplit:true, children:r.cells.map((c,k) => {
+    const v = typeof c === "object" && c !== null && !Array.isArray(c) && "t" in c ? c : {t:c};
+    return cell(P(T(v.t, {size:v.size || 17, bold:v.bold || r.bold, color:v.color}), {after:0, align:v.right ? d.AlignmentType.RIGHT : undefined}), widths[k], {fill:v.fill || r.fill});
+  })})));
+  return new d.Table({width:{size:widths.reduce((a,b)=>a+b,0), type:d.WidthType.DXA}, columnWidths:widths, rows:trs});
+}
+const CW = 9638;
+async function photoBytes(src){
+  if (!src) return null;
+  if (src.startsWith("data:")) return dataUrlToBytes(src);
+  try { const r = await fetch(src); if (!r.ok) return null; return new Uint8Array(await r.arrayBuffer()); } catch(_){ return null; }
+}
+function imgSize(bytes){
+  return new Promise(res => {
+    const url = URL.createObjectURL(new Blob([bytes]));
+    const im = new Image(); im.onload = () => { res({w:im.naturalWidth, h:im.naturalHeight}); URL.revokeObjectURL(url); };
+    im.onerror = () => { res(null); URL.revokeObjectURL(url); }; im.src = url;
+  });
+}
+async function imgRun(src, maxW, maxH){
+  const bytes = await photoBytes(src); if (!bytes) return null;
+  const s = await imgSize(bytes); if (!s) return null;
+  let w = maxW, h = Math.round(maxW * s.h / s.w); if (h > maxH) { h = maxH; w = Math.round(maxH * s.w / s.h); }
+  const isPng = bytes[0] === 0x89 && bytes[1] === 0x50;
+  return new (D().ImageRun)({type:isPng ? "png" : "jpg", data:bytes, transformation:{width:w, height:h}});
+}
+async function photosBlock(list){
+  const d = D(), out = [];
+  for (let k = 0; k < list.length; k += 2) {
+    const pair = list.slice(k, k + 2), w = pair.length === 1 ? [CW] : [CW/2, CW/2], cells = [];
+    for (let q = 0; q < pair.length; q++) {
+      const run = await imgRun(pair[q].src, pair.length === 1 ? 420 : 300, 300);
+      const cap = pair[q].caption || pair[q].desc || "";
+      cells.push(cell([new d.Paragraph({alignment:d.AlignmentType.CENTER, children:run ? [run] : [T("(foto no disponible)", {size:16, color:"888888"})]}),
+        P(T(cap, {size:15, color:"666666", italics:true}), {align:d.AlignmentType.CENTER, after:0})], w[q], {noBorders:true}));
+    }
+    out.push(new d.Table({width:{size:CW, type:d.WidthType.DXA}, columnWidths:w, rows:[new d.TableRow({cantSplit:true, children:cells})]}));
+    out.push(P(T(""), {after:60}));
+  }
+  return out;
+}
+async function headerBlock(title, sub){
+  const d = D(), logo = await imgRun(LOGO, 52, 52);
+  return [
+    new d.Table({width:{size:CW, type:d.WidthType.DXA}, columnWidths:[900, CW-900], rows:[new d.TableRow({children:[
+      cell(new d.Paragraph({children:logo ? [logo] : []}), 900, {noBorders:true}),
+      cell([P(T("GRUPO MARTINÓN · Dirección Corporativa de Implementación y Procesos", {size:16, bold:true, color:GOLD}), {after:20}),
+            P(T(title, {size:32, bold:true, color:NAVY}), {after:20}),
+            P(T(sub, {size:17, color:"555555"}), {after:0})], CW-900, {noBorders:true})
+    ]})]}),
+    P(T(""), {after:40, line:true}), P(T(""), {after:120})
+  ];
+}
+const H2 = (t, o = {}) => P(T(t, {size:24, bold:true, color:NAVY}), {before:o.before ?? 200, after:80, keepNext:true, line:true, pageBreak:o.pageBreak});
+async function campoFichaDocx(e, withHeader, pageBreak){
+  const out = [], b = band(e.score_general);
+  if (withHeader) out.push(...await headerBlock("Validación Check-in Digital — Ficha de campo", `${hotelLabel(e.hotel)} · ${e.area}`));
+  else out.push(P(T(`Campo · ${hotelLabel(e.hotel)} · ${e.area} · ${fmtDay(e.fecha)}`, {size:28, bold:true, color:NAVY}), {after:80, keepNext:true, line:true, pageBreak}));
+  out.push(table([CW/2, CW/2], null, [
+    {cells:[`Fecha: ${fmtDay(e.fecha)}`, `Evaluador: ${e.evaluador || "—"}`]},
+    {cells:[`Entrevistado: ${e.nombre_entrevistado || "—"}`, `Perfil: ${e.perfil_entrevistado || "—"}`]}]));
+  out.push(H2("Resultado"));
+  out.push(table([CW-2600, 2600], ["Pilar", "Resultado"], [
+    ...CAMPO_PILLARS.map(p => ({cells:[p.title, {t:fmt(e["score_" + p.key]), right:true}]})),
+    {fill:BEIGE, bold:true, cells:["Resultado de la ficha", {t:`${fmt(e.score_general)} · ${b.label}`, right:true, color:hex(b.color)}]}]));
+  const jr = JULIO_AREA[e.hotel + "|" + e.area];
+  if (jr) out.push(P(T(`Validación de julio 2026 para esta área: ${jr}%.`, {size:16, color:"6B7280", italics:true}), {before:60}));
+  let num = 0;
+  CAMPO_PILLARS.forEach(p => {
+    out.push(H2(p.title));
+    out.push(table([500, 4300, 1400, CW-6200], ["#", "Criterio", "Calificación", "Observación"],
+      (e.respuestas || []).filter(r => r.seccion === p.key).map(r => ({cells:[String(++num), r.pregunta + (r.dev ? " (en desarrollo)" : ""),
+        {t:VAL_LABEL[r.valor] || "Sin calificar", bold:true, color:VAL_COLOR[r.valor] || "6B7280", fill:ST_FILL[r.valor]}, r.comentario || ""]}))));
+  });
+  out.push(H2("Hallazgos clave")); out.push(...multiline(e.hallazgos));
+  out.push(H2("Plan de acción propuesto")); out.push(...multiline(e.plan_accion));
+  const f = (e.fotos || []).filter(p => p.src);
+  if (f.length) { out.push(H2("Evidencia fotográfica")); out.push(...await photosBlock(f)); }
+  return out;
+}
+async function fichaDocx(e, withHeader, pageBreak){
+  if (tipoOf(e) === "campo") return campoFichaDocx(e, withHeader, pageBreak);
+  const out = [], b = band(e.score_general);
+  if (withHeader) out.push(...await headerBlock("Medición Check-in Digital — Ficha mensual", `${hotelLabel(e.hotel)} · ${e.area} · ${fmtMes(e.mes)}`));
+  else out.push(P(T(`${hotelLabel(e.hotel)} · ${e.area} · ${fmtMes(e.mes)}`, {size:28, bold:true, color:NAVY}), {after:80, keepNext:true, line:true, pageBreak}));
+  out.push(table([CW/2, CW/2], null, [
+    {cells:[`Mes medido: ${fmtMes(e.mes)}`, `Fecha de captura: ${fmtDay(e.fecha)}`]},
+    {cells:[`Evaluador: ${e.evaluador || "—"}`, `Informante: ${e.informante || "—"} (${e.cargo_informante || "—"})`]}]));
+  out.push(H2("Resultado"));
+  out.push(table([CW-2600, 2600], ["Pilar", "Resultado"], [
+    ...PILLARS.map(p => ({cells:[p.title, {t:fmt(e["score_" + p.key]), right:true}]})),
+    {fill:BEIGE, bold:true, cells:["Resultado del área", {t:`${fmt(e.score_general)} · ${b.label}`, right:true, color:hex(b.color)}]}]));
+  const jr = JULIO_AREA[e.hotel + "|" + e.area];
+  if (jr) out.push(P(T(`Referencia validación julio 2026 para esta área: ${jr}%.`, {size:16, color:"6B7280", italics:true}), {before:60}));
+  PILLARS.forEach(p => {
+    out.push(H2(p.title));
+    out.push(table([2100, 2700, 1000, 1500, 1000, CW-8300], ["Indicador", "Datos capturados", "Valor", "Meta", "Estado", "Comentario"],
+      KPIS.filter(k => k.pillar === p.key).map(k => { const r = (e.kpis || {})[k.code] || {valor:null, estado:"na"};
+        return {cells:[`${k.code} ${k.name}`, {t:datoTxt(e, k), size:15}, {t:fmtK(k, r.valor), right:true, bold:true}, {t:metaText(k), size:15},
+          {t:ST_LABEL[r.estado], bold:true, color:hex(ST_COLOR[r.estado]), fill:ST_FILL[r.estado]}, (e.comentarios||{})[k.code] || ""]}; })));
+  });
+  out.push(H2("Hallazgos clave")); out.push(...multiline(e.hallazgos));
+  out.push(H2("Plan de acción propuesto")); out.push(...multiline(e.plan_accion));
+  const f = (e.fotos || []).filter(p => p.src);
+  if (f.length) { out.push(H2("Evidencia fotográfica")); out.push(...await photosBlock(f)); }
+  return out;
+}
+async function saveDocx(children, filename, footer){
+  const d = D();
+  const doc = new d.Document({styles:{default:{document:{run:{font:FONT, size:19}}}}, sections:[{
+    properties:{page:{size:{width:11906, height:16838}, margin:{top:1134, bottom:1134, left:1134, right:1134}}},
+    footers:{default:new d.Footer({children:[new d.Paragraph({alignment:d.AlignmentType.RIGHT, children:[
+      T(`Grupo Martinón · ${footer} · Página `, {size:15, color:"888888"}), new d.TextRun({children:[d.PageNumber.CURRENT], font:FONT, size:15, color:"888888"})]})]})},
+    children}]});
+  const blob = await d.Packer.toBlob(doc);
+  const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = filename;
+  document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 3000);
+}
+async function withBusy(btn, fn){
+  const old = btn ? btn.textContent : ""; if (btn) { btn.disabled = true; btn.textContent = "Generando…"; }
+  try { await fn(); } catch(err){ console.error(err); alert("No se pudo generar el documento: " + err.message); }
+  finally { if (btn) { btn.disabled = false; btn.textContent = old; } }
+}
+async function exportFichasDocx(list, filename, btn){
+  await withBusy(btn, async () => {
+    let ch = [];
+    if (list.length === 1) ch = await fichaDocx(list[0], true);
+    else {
+      ch.push(...await headerBlock("Check-in Digital — Historial de fichas", `${histDescription()} · ${list.length} ficha(s) · Generado ${fmtDay(today())}`));
+      ch.push(table([1700, 1100, 800, 1600, 1900, CW-7100], ["Tipo", "Fecha", "Hotel", "Área", "Persona", "Resultado"],
+        list.map(e => ({cells:[tipoOf(e) === "campo" ? "Campo" : "Gerentes · " + fmtMes(e.mes), fmtDay(e.fecha), e.hotel, e.area, (tipoOf(e) === "campo" ? e.nombre_entrevistado : e.informante) || "—",
+          {t:`${fmt(e.score_general)} · ${band(e.score_general).label}`, color:hex(band(e.score_general).color), bold:true}]}))));
+      for (const e of list) ch.push(...await fichaDocx(e, false, true));
+    }
+    const tipos = [...new Set(list.map(tipoOf))];
+    tipos.forEach(t => ch.push(P(T(metodOf(t), {size:15, color:"6B7280"}), {before:120})));
+    await saveDocx(ch, filename, "Check-in Digital");
+  });
+}
+async function exportConsolidadoDocx(btn){
+  if (!lastAgg) return;
+  await withBusy(btn, async () => {
+    const agg = lastAgg, ev = agg.filter(a => a.score !== null), corp = mean(ev.map(a => a.score)), cb = band(corp);
+    const campo = lastTipo === "campo";
+    const ch = await headerBlock(campo ? "Validación en campo Check-in Digital — Resultado por propiedad" : "Medición Check-in Digital (gerentes) — Resultado por propiedad", `Período: ${lastPeriod} · Generado ${fmtDay(today())}`);
+    ch.push(H2("Resumen corporativo", {before:0}));
+    ch.push(table([2500, 650, 650, 600, 600, 600, 600, 950, 700, CW-7850], ["Propiedad", "Recep.", "Fichas", "P1", "P2", "P3", "P4", "Resultado", "Julio", "Estado"], [
+      ...ev.map(a => { const b = band(a.score); return {cells:[hotelLabel(a.hotel.code), {t:a.areas.length, right:true}, {t:a.fichas, right:true},
+        ...PILLARS.map(p => ({t:fmt(a.pillars[p.key]), right:true})), {t:fmt(a.score), right:true, bold:true, color:hex(b.color)}, {t:a.hotel.julio === null ? "—" : a.hotel.julio + "%", right:true}, b.label]}; }),
+      {fill:BEIGE, bold:true, cells:["Promedio corporativo", "", "", ...PILLARS.map(p => ({t:fmt(mean(ev.map(a => a.pillars[p.key]))), right:true})),
+        {t:fmt(corp), right:true, color:hex(cb.color)}, {t:"89%", right:true}, cb.label]}]));
+    ch.push(H2("Resultado por complejo"));
+    ch.push(table([1800, 4400, 1300, CW-7500], ["Complejo", "Propiedades", "Resultado", "Estado"],
+      Object.entries(COMPLEJOS).map(([n, hs]) => { const v = mean(ev.filter(a => hs.includes(a.hotel.code)).map(a => a.score)), bb = band(v);
+        return {cells:[n, {t:hs.map(hc => { const a = ev.find(z => z.hotel.code === hc); return hc + " " + (a ? fmt(a.score) : "—"); }).join(" · "), size:15},
+          {t:fmt(v), right:true, bold:true, color:hex(bb.color)}, bb.label]}; })));
+    const meses = monthsIn(lastRows);
+    if (meses.length > 1) {
+      ch.push(H2("Evolución mensual"));
+      const w = Math.floor((CW - 1500) / meses.length);
+      ch.push(table([1500, ...meses.map(() => w)], ["Propiedad", ...meses.map(fmtMes)],
+        HOTELS.map(h => ({cells:[h.code, ...meses.map(m => { const a = aggregate(lastRows.filter(r => r.mes === m)).find(x => x.hotel.code === h.code); return {t:fmt(a.score), right:true, bold:true, color:hex(band(a.score).color)}; })]}))));
+    }
+    const rl = recepcionesOf(ev);
+    if (rl.length) {
+      ch.push(H2("Resultado por recepción"));
+      ch.push(table([3300, 1800, 800, 1100, 900, CW-7900], ["Hotel", "Recepción", "Fichas", "Resultado", "Julio", "Estado"],
+        rl.map(r => ({cells:[hotelLabel(r.hotel.code), r.nombre, {t:r.fichas, right:true}, {t:fmt(r.score), right:true, bold:true, color:hex(band(r.score).color)},
+          {t:r.julio !== undefined ? r.julio + "%" : "—", right:true}, band(r.score).label]}))));
+    }
+    for (const a of ev) {
+      const b = band(a.score);
+      ch.push(H2(`${hotelLabel(a.hotel.code)} — ${fmt(a.score)} · ${b.label}`, {before:300}));
+      if (campo) {
+        ch.push(table([2600, 800, 900, 900, 900, 900, 1200, CW-8200], ["Recepción", "Fichas", "P1", "P2", "P3", "P4", "Resultado", "Julio"],
+          a.areas.map(r => { const j = JULIO_AREA[a.hotel.code + "|" + r.nombre]; return {cells:[r.nombre, {t:r.fichas, right:true}, ...PILLARS.map(p => ({t:fmt(r.pillars[p.key]), right:true})),
+            {t:fmt(r.score), right:true, bold:true, color:hex(band(r.score).color)}, {t:j !== undefined ? j + "%" : "—", right:true}]}; })));
+        ch.push(P(T("Resultado por agente", {bold:true, color:NAVY}), {before:160, keepNext:true}));
+        ch.push(table([1600, 2600, 2500, 1300, CW-8000], ["Recepción", "Agente", "Perfil", "Fecha", "Resultado"],
+          agentesOf(a).map(e => ({cells:[e.area, e.nombre_entrevistado || "—", e.perfil_entrevistado || "—", fmtDay(e.fecha),
+            {t:fmt(e.score_general), right:true, bold:true, color:hex(band(e.score_general).color)}]}))));
+        const weak = a.areas.flatMap(r => weakCrit(r).map(x => ({area:r.nombre, ...x})));
+        if (weak.length) {
+          ch.push(P(T("Criterios por debajo del estándar (promedio < 90%)", {bold:true, color:NAVY}), {before:160, keepNext:true}));
+          ch.push(table([1500, 4000, 900, CW-6400], ["Recepción", "Criterio", "Prom.", "Observaciones"],
+            weak.map(x => ({cells:[x.area, x.q, {t:fmt(x.val), right:true, bold:true, fill:ST_FILL[critState(x.val)]}, x.obs.join(" | ")]}))));
+        }
+      } else {
+      const aw = Math.floor((CW - 3600 - 2000) / a.areas.length);
+      ch.push(table([3600, ...a.areas.map(() => aw), 2000], ["Indicador", ...a.areas.map(r => r.nombre), "Meta"],
+        KPIS.map(k => ({cells:[`${k.code} ${k.name}`, ...a.areas.map(r => ({t:fmtK(k, r.kpis[k.code].valor), right:true, fill:ST_FILL[r.kpis[k.code].estado]})), {t:metaText(k), size:15}]}))
+          .concat([{fill:BEIGE, bold:true, cells:["Resultado del área", ...a.areas.map(r => ({t:fmt(r.score), right:true, color:hex(band(r.score).color)})), ""]}])));
+      }
+      const hall = hallazgosOf(a);
+      if (hall.length) {
+        ch.push(P(T("Hallazgos y plan de acción registrados", {bold:true, color:NAVY}), {before:160, keepNext:true}));
+        ch.push(table([1500, 1300, (CW-2800)/2, (CW-2800)/2], ["Área", campo ? "Fecha" : "Mes", "Hallazgos", "Plan de acción"],
+          hall.map(e => ({cells:[e.area, campo ? fmtDay(e.fecha) : fmtMes(e.mes), e.hallazgos || "", e.plan_accion || ""]}))));
+      }
+      const fot = fotosOf(a);
+      if (fot.length) {
+        ch.push(P(T("Evidencia fotográfica", {bold:true, color:NAVY}), {before:160, keepNext:true}));
+        ch.push(...await photosBlock(fot.map(p => ({src:p.src, caption:p.area + (p.desc ? " · " + p.desc : "")}))));
+      }
+    }
+    const rp = rmProgress();
+    ch.push(H2(`Roadmap de desarrollo — avance ${Math.round(rp.pct)}%`, {before:300}));
+    ch.push(table([500, 3300, 1300, 1200, 1200, CW-7500], ["#", "Funcionalidad", "Estado", "Compromiso", "Entrega", "Indicador"],
+      roadmap.map(x => ({cells:[String(x.id), x.funcionalidad, {t:x.estado, bold:true}, fmtDay(x.fecha_compromiso) || "—", fmtDay(x.fecha_entrega) || "—", {t:x.indicador || "", size:15}]}))));
+    ch.push(P(T("P1 Ejecución Operativa · P2 Funcionalidad del Sistema · P3 Infraestructura y Equipamiento · P4 Adopción Operativa. Área = promedio de sus fichas del período; propiedad = promedio de sus áreas; corporativo = promedio de propiedades evaluadas. Julio = validación en campo de julio 2026" + (campo ? " (mismos criterios). " : " (referencia). ") + metodOf(lastTipo), {size:15, color:"6B7280"}), {before:200}));
+    await saveDocx(ch, `CheckIn_Digital_${campo ? "Campo" : "Gerentes"}_${today()}.docx`, "Check-in Digital");
+  });
+}
+
+// ============================ NAVEGACIÓN / EVENTOS ============================
+function switchView(v){
+  document.querySelectorAll(".tabs button").forEach(b => b.classList.toggle("active", b.dataset.view === v));
+  document.querySelectorAll(".view").forEach(s => s.classList.toggle("active", s.id === "view-" + v));
+  if (v === "resultados") renderResultados(true);
+  window.scrollTo({top:0});
+  if (v === "fichas") renderHistorial(true);
+  if (v === "roadmap") renderRoadmap();
+}
+document.querySelectorAll(".tabs button").forEach(b => b.onclick = () => switchView(b.dataset.view));
+
+fillHotelSelect($("hotel")); fillHotelSelect($("f-hotel"), true); fillHotelSelect($("c-hotel"));
+$("c-fecha").value = today();
+$("c-hotel").onchange = () => fillCAreaSelect($("c-hotel").value);
+$("c-perfil").onchange = () => $("c-perfil-otro-wrap").style.display = $("c-perfil").value === "Otros" ? "block" : "none";
+$("c-btn-guardar").onclick = cGuardar;
+$("c-btn-cancel").onclick = () => { setCEditing(null); cClear(); };
+$("c-btn-pdf").onclick = () => cLastSaved && exportFichaPDF(cLastSaved);
+$("c-btn-word").onclick = ev => cLastSaved && exportFichasDocx([cLastSaved], fichaFile(cLastSaved), ev.currentTarget);
+$("c-btn-next").onclick = cNext;
+document.querySelectorAll("#res-tipo button").forEach(b => b.onclick = () => {
+  resTipo = b.dataset.tipo; document.querySelectorAll("#res-tipo button").forEach(x => x.classList.toggle("active", x === b)); renderResultados();
+});
+$("fecha").value = today(); $("mes").value = thisMonth();
+$("hotel").onchange = () => fillAreaSelect($("hotel").value);
+$("cargo").onchange = () => $("cargo_otro_wrap").style.display = $("cargo").value === "Otros" ? "block" : "none";
+$("ph-cam").onchange = ev => { addPhotoFiles([...ev.target.files], "med"); ev.target.value = ""; };
+$("ph-gal").onchange = ev => { addPhotoFiles([...ev.target.files], "med"); ev.target.value = ""; };
+$("c-ph-cam").onchange = ev => { addPhotoFiles([...ev.target.files], "campo"); ev.target.value = ""; };
+$("c-ph-gal").onchange = ev => { addPhotoFiles([...ev.target.files], "campo"); ev.target.value = ""; };
+$("lightbox").onclick = ev => { if (ev.target.id !== "lb-img") $("lightbox").classList.remove("open"); };
+$("btn-guardar").onclick = guardar;
+$("btn-cancel-edit").onclick = () => { setEditing(null); clearAnswers(); };
+$("btn-pdf").onclick = () => lastSaved && exportFichaPDF(lastSaved);
+$("btn-word").onclick = ev => lastSaved && exportFichasDocx([lastSaved], fichaFile(lastSaved), ev.currentTarget);
+$("btn-next").onclick = nextFicha;
+$("f-complejo").onchange = () => {
+  const c = $("f-complejo").value, sel = $("f-hotel"), prev = sel.value;
+  fillHotelSelect(sel, true);
+  if (c) [...sel.querySelectorAll("option")].forEach(o => { if (o.value && !COMPLEJOS[c].includes(o.value)) o.remove(); });
+  sel.value = COMPLEJOS[c] && !COMPLEJOS[c].includes(prev) ? "" : prev;
+  renderHistorial();
+};
+["f-tipo", "f-hotel", "f-area", "f-mes"].forEach(id => $(id).onchange = () => renderHistorial());
+["f-desde", "f-hasta"].forEach(id => $(id).onchange = () => { setQuick(null); renderHistorial(); });
+document.querySelectorAll("#f-quick button").forEach(b => b.onclick = () => { setQuick(b.dataset.range); renderHistorial(); });
+$("btn-hist-word").onclick = ev => { if (!lastHist.length) { alert("No hay fichas con esos filtros."); return; } exportFichasDocx(lastHist, `CheckIn_Historial_${today()}.docx`, ev.currentTarget); };
+$("btn-hist-pdf").onclick = () => { if (!lastHist.length) { alert("No hay fichas con esos filtros."); return; } openPDF(historialPDF(lastHist), "Check-in Digital — Historial"); };
+$("btn-retry").onclick = retrySync;
+$("btn-res-refresh").onclick = () => renderResultados(true);
+$("res-desde").onchange = () => renderResultados(); $("res-hasta").onchange = () => renderResultados();
+$("btn-res-pdf").onclick = () => lastAgg && openPDF(consolidadoHTML(), `Check-in Digital — ${lastTipo === "campo" ? "Validación en campo" : "Medición gerentes"}`);
+$("btn-res-word").onclick = ev => exportConsolidadoDocx(ev.currentTarget);
+
+buildForm(); recalc(); renderPhotoGrid("med"); buildCampo(); cRecalc(); renderPhotoGrid("campo");
+loadRoadmap().then(() => { if ($("view-roadmap").classList.contains("active")) renderRoadmap(); });
+setTimeout(() => { entries.filter(x => !x.synced).forEach(pushEntry); }, 1500);
+</script>
+</body>
+</html>
