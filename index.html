@@ -140,6 +140,12 @@
   .devtag{display:inline-block;font-size:.66rem;font-weight:700;color:#8A6A1F;background:#FDF3E0;border-radius:8px;padding:1px 7px;margin-left:4px;vertical-align:middle;}
   .tipo-pill{font-size:.68rem;font-weight:700;padding:1px 7px;border-radius:8px;background:var(--navy);color:#fff;margin-right:4px;}
   .tipo-pill.med{background:var(--gold);}
+  .cphoto{margin-top:6px;}
+  .cphoto .photo-pick label{padding:7px 6px;font-size:.8rem;}
+  .cphoto .photo-grid{grid-template-columns:repeat(3,1fr);gap:6px;margin-top:8px;}
+  .cphoto .photo-grid:empty{display:none;}
+  .cphoto .photo-card img{height:80px;}
+  .cphoto .photo-card input{font-size:.72rem;padding:4px 6px;}
 </style>
 </head>
 <body>
@@ -201,7 +207,7 @@
         <label>🖼 Galería<input type="file" accept="image/*" multiple id="c-ph-gal"></label>
       </div>
       <div class="photo-grid" id="c-photo-grid"></div>
-      <p class="hint">Hasta 6 fotos por ficha (código QR exhibido, escáner, tablet, tarjeta manual…).</p>
+      <p class="hint">Fotos generales de la visita, hasta 6. Cada criterio tiene además sus propios botones (hasta 3 fotos por criterio).</p>
     </div>
   </div>
 
@@ -725,15 +731,16 @@ async function uploadPhoto(dataUrl, name){
   return `${SUPABASE_URL}/storage/v1/object/public/${SB_BUCKET}/${name}`;
 }
 async function uploadEntryPhotos(e){
-  for (let i = 0; i < (e.fotos || []).length; i++) {
-    const p = e.fotos[i];
+  const all = allPhotosOf(e);
+  for (let i = 0; i < all.length; i++) {
+    const p = all[i];
     if (!p.src || !p.src.startsWith("data:")) continue;
     try { p.src = await uploadPhoto(p.src, `checkin_${e.hotel}_${Date.now()}_${i}.jpg`); }
     catch(err){ if (err.storage) { console.warn("Storage no disponible; la foto queda dentro de la ficha"); return; } throw err; }
   }
 }
 async function deletePhotos(e){
-  const names = (e.fotos || []).map(p => storageName(p.src)).filter(Boolean);
+  const names = allPhotosOf(e).map(p => storageName(p.src)).filter(Boolean);
   if (!names.length) return;
   try {
     await fetch(`${SUPABASE_URL}/storage/v1/object/${SB_BUCKET}`, {method:"DELETE",
@@ -891,6 +898,30 @@ function fillCAreaSelect(hotel, keep){
   if (keep && list.includes(keep)) $("c-area").value = keep;
   else if (list.length === 1) $("c-area").value = list[0];
 }
+// Fotos por criterio (hasta 3 por criterio)
+const MAX_CRIT_PHOTOS = 3;
+const CF = {};
+const critKey = (p, i) => p + "_" + i;
+async function addCritPhotos(files, key, el){
+  for (const f of files) {
+    if (CF[key].length >= MAX_CRIT_PHOTOS) { alert(`Máximo ${MAX_CRIT_PHOTOS} fotos por criterio.`); break; }
+    try { CF[key].push({src: await compressImage(f), desc: ""}); } catch(e){ alert("No se pudo procesar una foto."); }
+  }
+  renderCritPhotos(key, el);
+}
+function renderCritPhotos(key, el){
+  const g = el.querySelector(".cphoto .photo-grid"); g.innerHTML = "";
+  CF[key].forEach((p, i) => {
+    const d = document.createElement("div"); d.className = "photo-card";
+    d.innerHTML = `<img src="${p.src}" alt="Foto ${i+1}"><button class="rm" title="Quitar">✕</button><input type="text" placeholder="Descripción" value="${esc(p.desc)}">`;
+    d.querySelector("img").onclick = () => openLightbox(p.src);
+    d.querySelector(".rm").onclick = () => { CF[key].splice(i, 1); renderCritPhotos(key, el); };
+    d.querySelector("input").oninput = ev => { p.desc = ev.target.value; };
+    g.appendChild(d);
+  });
+}
+const critEl = (p, i) => document.querySelector(`#c-pillars [data-section="${p}"] .item[data-idx="${i}"]`);
+const allPhotosOf = e => [...(e.fotos || []), ...(e.respuestas || []).flatMap(r => r.fotos || [])];
 function buildCampo(){
   const root = $("c-pillars"); let n = 0;
   CAMPO_PILLARS.forEach(p => {
@@ -903,7 +934,14 @@ function buildCampo(){
       const d = document.createElement("div"); d.className = "item"; d.dataset.idx = i;
       d.innerHTML = `<p class="q"><b>${n}.</b> ${esc(it.q)}${it.dev ? '<span class="devtag">En desarrollo</span>' : ""}</p><div class="options">` +
         OPTIONS.map(o => `<label class="opt ${o.key}"><input type="radio" name="c_${p.key}_${i}" value="${o.key}">${o.label}</label>`).join("") +
-        `</div><textarea class="comentario" placeholder="Observación / evidencia"></textarea>`;
+        `</div><textarea class="comentario" placeholder="Observación / evidencia"></textarea>
+        <div class="cphoto"><div class="photo-pick">
+          <label>📷 Cámara<input type="file" accept="image/*" capture="environment" class="cp-cam"></label>
+          <label>🖼 Galería<input type="file" accept="image/*" multiple class="cp-gal"></label>
+        </div><div class="photo-grid"></div></div>`;
+      const key = critKey(p.key, i);
+      CF[key] = [];
+      d.querySelectorAll(".cp-cam, .cp-gal").forEach(inp => inp.onchange = ev => { addCritPhotos([...ev.target.files], key, d); ev.target.value = ""; });
       body.appendChild(d);
     });
     root.appendChild(card);
@@ -932,7 +970,8 @@ function cCollect(){
     p.items.forEach((it, i) => {
       const el = document.querySelector(`#c-pillars [data-section="${p.key}"] .item[data-idx="${i}"]`);
       const chk = el.querySelector("input:checked"), valor = chk ? chk.value : "";
-      respuestas.push({seccion:p.key, idx:i, pregunta:it.q, valor, comentario:el.querySelector("textarea").value.trim(), dev:!!it.dev});
+      respuestas.push({seccion:p.key, idx:i, pregunta:it.q, valor, comentario:el.querySelector("textarea").value.trim(), dev:!!it.dev,
+        fotos:(CF[critKey(p.key, i)] || []).map(f => ({src:f.src, desc:(f.desc||"").trim()}))});
       if (valor && valor !== "na") vals.push(OPTIONS.find(o => o.key === valor).val);
     });
     scores[p.key] = mean(vals);
@@ -954,6 +993,7 @@ function cClear(){
   CAMPO_PILLARS.forEach(p => p.items.forEach((it, i) => {
     const el = document.querySelector(`#c-pillars [data-section="${p.key}"] .item[data-idx="${i}"]`);
     setOpt(el, it.dev ? "na" : ""); el.querySelector("textarea").value = "";
+    CF[critKey(p.key, i)] = []; renderCritPhotos(critKey(p.key, i), el);
   }));
   $("c-hallazgos").value = ""; $("c-plan").value = "";
   PH.campo.list = []; renderPhotoGrid("campo");
@@ -1016,6 +1056,7 @@ function cLoad(e){
     const el = document.querySelector(`#c-pillars [data-section="${pl.key}"] .item[data-idx="${i}"]`);
     const r = (e.respuestas || []).find(x => x.seccion === pl.key && x.idx === i);
     setOpt(el, r ? r.valor : ""); el.querySelector("textarea").value = r ? r.comentario || "" : "";
+    CF[critKey(pl.key, i)] = ((r && r.fotos) || []).map(f => ({src:f.src, desc:f.desc || ""})); renderCritPhotos(critKey(pl.key, i), el);
   }));
   $("c-hallazgos").value = e.hallazgos || ""; $("c-plan").value = e.plan_accion || "";
   PH.campo.list = (e.fotos || []).map(f => ({src:f.src, desc:f.desc || ""})); renderPhotoGrid("campo");
@@ -1068,7 +1109,7 @@ async function renderHistorial(force){
   list.forEach(e => {
     const b = band(e.score_general);
     const d = document.createElement("div"); d.className = "entry-row";
-    const fotos = (e.fotos || []).filter(p => p.src);
+    const fotos = allPhotosOf(e).filter(p => p.src);
     const campo = tipoOf(e) === "campo";
     let sub;
     if (campo) {
@@ -1100,7 +1141,6 @@ async function retrySync(){ for (const e of entries.filter(x => !x.synced)) awai
 // ============================ RESULTADOS ============================
 // Área: promedio de sus fichas en el período · Propiedad: promedio de sus áreas · Corporativo: promedio de propiedades
 let resTipo = "campo";
-const critKey = (p, i) => p + "_" + i;
 function aggArea(rows){
   const pillars = {}; PILLARS.forEach(p => pillars[p.key] = mean(rows.map(r => r["score_" + p.key])));
   const kp = {}, crit = {};
@@ -1309,12 +1349,14 @@ function campoFichaHTML(e, withHeader = true){
     h += `<h2>${esc(p.title)}</h2><table><tr><th style="width:5%">#</th><th style="width:47%">Criterio</th><th style="width:14%">Calificación</th><th>Observación</th></tr>`;
     (e.respuestas || []).filter(r => r.seccion === p.key).forEach(r => {
       n++;
-      h += `<tr><td>${n}</td><td>${esc(r.pregunta)}${r.dev ? ' <span class="small">(en desarrollo)</span>' : ""}</td><td class="${r.valor}" style="color:#${VAL_COLOR[r.valor] || "6B7280"};font-weight:bold">${VAL_LABEL[r.valor] || "Sin calificar"}</td><td>${esc(r.comentario)}</td></tr>`;
+      h += `<tr><td>${n}</td><td>${esc(r.pregunta)}${r.dev ? ' <span class="small">(en desarrollo)</span>' : ""}</td><td class="${r.valor}" style="color:#${VAL_COLOR[r.valor] || "6B7280"};font-weight:bold">${VAL_LABEL[r.valor] || "Sin calificar"}</td><td>${esc(r.comentario)}${(r.fotos||[]).length ? `<br><span class="small">📷 ${r.fotos.length} foto(s) — ver evidencia por criterio</span>` : ""}</td></tr>`;
     });
     h += `</table>`;
   });
   h += `<h2>Hallazgos clave</h2><p>${esc(e.hallazgos || "—").replace(/\n/g, "<br>")}</p>`;
   h += `<h2>Plan de acción propuesto</h2><p>${esc(e.plan_accion || "—").replace(/\n/g, "<br>")}</p>`;
+  const cf = (e.respuestas || []).flatMap(r => (r.fotos||[]).filter(p => p.src).map(p => ({...p, cap:`Criterio ${critNum(r)}${p.desc ? " · " + p.desc : ""}`})));
+  if (cf.length) h += `<h2>Evidencia por criterio</h2><div class="fotos">${cf.map(p => `<figure><img src="${p.src}"><figcaption>${esc(p.cap)}</figcaption></figure>`).join("")}</div>`;
   return h + fotosHTML(e);
 }
 function fichaHTML(e, withHeader = true){
@@ -1345,7 +1387,10 @@ const METOD = "Metodología: cada indicador se clasifica según su meta: Cumple 
 const issuesOf = a => a.areas.flatMap(r => KPIS.filter(k => ["parcial","nocumple"].includes(r.kpis[k.code].estado)).map(k => ({area:r.nombre, k, ...r.kpis[k.code],
   com:[...new Set(r.rows.map(e => (e.comentarios||{})[k.code]).filter(Boolean))].join(" | ")})));
 const hallazgosOf = a => a.areas.flatMap(r => r.rows.filter(e => e.hallazgos || e.plan_accion).map(e => ({area:r.nombre, mes:e.mes, ...e})));
-const fotosOf = a => a.areas.flatMap(r => r.rows.flatMap(e => (e.fotos||[]).filter(p => p.src).map(p => ({area:r.nombre, ...p}))));
+const fotosOf = a => a.areas.flatMap(r => r.rows.flatMap(e => [
+  ...(e.fotos||[]).filter(p => p.src).map(p => ({area:r.nombre, ...p})),
+  ...(e.respuestas||[]).flatMap(x => (x.fotos||[]).filter(p => p.src).map(p => ({area:r.nombre, ...p, desc:`Criterio ${critNum(x)}${p.desc ? " · " + p.desc : ""}`})))]));
+const critNum = x => { let n = 0; for (const p of CAMPO_PILLARS) { for (let i = 0; i < p.items.length; i++) { n++; if (p.key === x.seccion && i === x.idx) return n; } } return "?"; };
 function roadmapHTML(){
   const p = rmProgress();
   return `<h2>Roadmap de desarrollo — avance ${Math.round(p.pct)}%</h2><table><tr><th>#</th><th>Funcionalidad</th><th>Estado</th><th>Compromiso</th><th>Entrega</th><th>Indicador</th></tr>` +
@@ -1499,10 +1544,13 @@ async function campoFichaDocx(e, withHeader, pageBreak){
     out.push(H2(p.title));
     out.push(table([500, 4300, 1400, CW-6200], ["#", "Criterio", "Calificación", "Observación"],
       (e.respuestas || []).filter(r => r.seccion === p.key).map(r => ({cells:[String(++num), r.pregunta + (r.dev ? " (en desarrollo)" : ""),
-        {t:VAL_LABEL[r.valor] || "Sin calificar", bold:true, color:VAL_COLOR[r.valor] || "6B7280", fill:ST_FILL[r.valor]}, r.comentario || ""]}))));
+        {t:VAL_LABEL[r.valor] || "Sin calificar", bold:true, color:VAL_COLOR[r.valor] || "6B7280", fill:ST_FILL[r.valor]},
+        (r.comentario || "") + ((r.fotos||[]).length ? `${r.comentario ? " · " : ""}📷 ${r.fotos.length} foto(s) — ver evidencia por criterio` : "")]}))));
   });
   out.push(H2("Hallazgos clave")); out.push(...multiline(e.hallazgos));
   out.push(H2("Plan de acción propuesto")); out.push(...multiline(e.plan_accion));
+  const cf = (e.respuestas || []).flatMap(r => (r.fotos||[]).filter(p => p.src).map(p => ({src:p.src, caption:`Criterio ${critNum(r)}${p.desc ? " · " + p.desc : ""}`})));
+  if (cf.length) { out.push(H2("Evidencia por criterio")); out.push(...await photosBlock(cf)); }
   const f = (e.fotos || []).filter(p => p.src);
   if (f.length) { out.push(H2("Evidencia fotográfica")); out.push(...await photosBlock(f)); }
   return out;
